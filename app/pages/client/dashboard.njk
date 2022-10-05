@@ -1,0 +1,167 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Client Dashboard' %}
+{% set style = 'user-dashboard' %}
+{% set script = 'user-dashboard' %}
+{% extends "client-dashboard.njk" %}
+
+{% block content %}
+    <!-- COVER HEADER: YELLOW -->
+    <div class="cover-yellow"></div>
+    <!-- MAIN -->
+    <main id="main-user-dashboard">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo items-start justify-between">
+                <aside class="aside-dashboard">
+                    <div class="text-center">
+                        <img class="aside-user-image" src="../../assets/img/user.png" alt="">
+                        <h6 class="aside-user-name">Agus Puyono</h6>
+                        <strong class="aside-user-level">Seller Level 2</strong>
+                        <div class="block-flex-row-center">
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
+                            </svg>
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
+                            </svg>
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
+                            </svg>
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
+                            </svg>
+                            <svg class="mx-1 md:mx-4px" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9472 2.80422L15.6062 8.19222L21.5522 9.05622C22.4192 9.18222 22.7662 10.2482 22.1382 10.8602L17.8352 15.0542L18.8512 20.9762C18.9992 21.8402 18.0932 22.4982 17.3172 22.0912L11.9992 19.2952L6.68122 22.0912C5.90522 22.4992 4.99922 21.8402 5.14722 20.9762L6.16322 15.0542L1.85922 10.8602C1.23222 10.2482 1.57822 9.18322 2.44522 9.05722L8.39122 8.19322L11.0502 2.80522C11.4392 2.01822 12.5592 2.01822 12.9472 2.80422Z" fill="#FFB422"/>
+                            </svg>
+                            <span class="font-semibold text-14px md:text-16px text-black-50 mx-4px pt-1 md:pt-0">5.0 (11)</span>
+                        </div>
+                    </div>
+                    <div class="aside-user-information">
+                        <div class="row-flex-kanoo justify-between mb-18px md:mb-24px">
+                            <div class="flex items-center">
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12 2C8.134 2 5 5.134 5 9C5 12.966 9.404 18.82 11.226 21.071C11.626 21.565 12.374 21.565 12.774 21.071C14.596 18.82 19 12.966 19 9C19 5.134 15.866 2 12 2ZM12 11.5C10.619 11.5 9.5 10.381 9.5 9C9.5 7.619 10.619 6.5 12 6.5C13.381 6.5 14.5 7.619 14.5 9C14.5 10.381 13.381 11.5 12 11.5Z" fill="#EA3AA1"/>
+                                    </svg>                                       
+                                </div>
+                                <span class="aside-user-text-left">From</span>
+                            </div>
+                            <strong class="aside-user-text-right">Indonesia</strong>
+                        </div>
+                        <div class="row-flex-kanoo justify-between mb-18px md:mb-24px">
+                            <div class="flex items-center">
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7 1C6.448 1 6 1.448 6 2V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3H18V2C18 1.448 17.552 1 17 1C16.448 1 16 1.448 16 2V3H8V2C8 1.448 7.552 1 7 1ZM5 8H19V18C19 18.552 18.552 19 18 19H6C5.448 19 5 18.552 5 18V8Z" fill="#EA3AA1"/>
+                                    </svg>                                      
+                                </div>
+                                <span class="aside-user-text-left">Member Since</span>
+                            </div>
+                            <strong class="aside-user-text-right">March 2020</strong>
+                        </div>
+                        <div class="row-flex-kanoo justify-between mb-18px md:mb-24px">
+                            <div class="flex items-center">
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9 1V3H15V1H9ZM18.959 2.79297L17.666 4.31836L20.6152 6.81836L21.9082 5.29297L18.959 2.79297ZM12 4C7.02255 4 3 8.02255 3 13C3 17.9775 7.02255 22 12 22C16.9775 22 21 17.9775 21 13C21 8.02255 16.9775 4 12 4ZM12 6C15.9105 6 19 9.08945 19 13C19 16.9105 15.9105 20 12 20C8.08945 20 5 16.9105 5 13C5 9.08945 8.08945 6 12 6ZM11 8V14H13V8H11Z" fill="#EA3AA1"/>
+                                    </svg>                                       
+                                </div>
+                                <span class="aside-user-text-left">Avg Response Time</span>
+                            </div>
+                            <strong class="aside-user-text-right">1 Hour</strong>
+                        </div>
+                        <div class="row-flex-kanoo justify-between">
+                            <div class="flex items-center">
+                                <div>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.1523 2.00113C9.25997 1.95785 6.64866 3.15557 4.79688 5.08903L2.85352 3.14567C2.65852 2.95067 2.34148 2.95067 2.14648 3.14567C2.04848 3.24267 2 3.37118 2 3.49918V7.99918C2 8.2644 2.10536 8.51875 2.29289 8.70629C2.48043 8.89382 2.73478 8.99918 3 8.99918H7.5C7.628 8.99918 7.75552 8.9497 7.85352 8.8527C8.04852 8.6577 8.04852 8.34067 7.85352 8.14567L6.2168 6.50895C8.02806 4.60036 10.7519 3.56825 13.6914 4.17496C16.7664 4.80996 19.2318 7.29904 19.8398 10.38C20.8498 15.498 16.941 19.9992 12 19.9992C7.881 19.9992 4.47988 16.8694 4.04688 12.8644C3.99287 12.3674 3.5625 11.9992 3.0625 11.9992C2.4625 11.9992 1.9955 12.5243 2.0625 13.1203C2.6215 18.1083 6.866 21.9992 12 21.9992C18.136 21.9992 22.9993 16.4428 21.8223 10.0968C21.0773 6.07384 17.8171 2.85943 13.7871 2.15543C13.2347 2.05906 12.6888 2.00916 12.1523 2.00113ZM12 5.99918C11.448 5.99918 11 6.44718 11 6.99918V11.9992C11 12.2642 11.105 12.5192 11.293 12.7062L13.5859 14.9992C13.9759 15.3892 14.61 15.3892 15 14.9992C15.39 14.6092 15.39 13.9751 15 13.5851L13 11.5851V6.99918C13 6.44718 12.552 5.99918 12 5.99918Z" fill="#EA3AA1"/>
+                                    </svg>                                        
+                                </div>
+                                <span class="aside-user-text-left">Last Delivery</span>
+                            </div>
+                            <strong class="aside-user-text-right">7 April 2021</strong>
+                        </div>
+                    </div>
+                    <div class="mt-18px md:mt-24px">
+                        <a href="#" class="aside-edit-profile">Edit Profile</a>
+                    </div>
+                </aside>
+                <section class="section-dashboard">
+                    <!-- ACTIVE ORDER -->
+                    <div class="mb-32px md:mb-36px lg:mb-48px">
+                        <div class="flex items-center justify-between mb-18px md:mb-24px">
+                            <h3 class="section-title-text">Active Order</h3>
+                            <a href="#" class="section-button-text">See more (12)</a>
+                        </div>
+                        <div class="row-flex-kanoo">
+                            <!-- ACTIVE ORDER: HEADER -->
+                            <div class="section-order-header">
+                                <div class="order-header-title section-order-buyer">Buyer</div>
+                                <div class="order-header-title section-order-service">Service</div>
+                                <div class="order-header-title section-order-dueon">Due on</div>
+                                <div class="order-header-title section-order-price">Price</div>
+                                <div class="order-header-title section-order-action"></div>
+                            </div>
+                            <!-- ACTIVE ORDER: BODY -->
+                            <div class="section-order-body">
+                                <article class="section-order-item">
+                                    <div class="section-order-buyer">
+                                        <img class="body-order-image" src="../../assets/img/user.png" alt="">
+                                        <strong class="body-order-name">Yamato Santosa</strong>
+                                    </div>
+                                    <div class="section-order-service">
+                                        <p class="body-order-text">Help you to make a Poster Design for marketing needs</p>
+                                    </div>
+                                    <div class="section-order-dueon">
+                                        <span class="body-order-date">7 April 2021</span>
+                                    </div>
+                                    <div class="section-order-price">
+                                        <strong class="body-order-price">$60</strong>
+                                    </div>
+                                    <div class="section-order-action">
+                                        <a href="#" class="body-order-see">See Detail</a>
+                                    </div>
+                                </article>
+                                <article class="section-order-item">
+                                    <div class="section-order-buyer">
+                                        <img class="body-order-image" src="../../assets/img/user.png" alt="">
+                                        <strong class="body-order-name">Yamato Santosa</strong>
+                                    </div>
+                                    <div class="section-order-service">
+                                        <p class="body-order-text">Help you to make a Poster Design for marketing needs</p>
+                                    </div>
+                                    <div class="section-order-dueon">
+                                        <span class="body-order-date">7 April 2021</span>
+                                    </div>
+                                    <div class="section-order-price">
+                                        <strong class="body-order-price">$60</strong>
+                                    </div>
+                                    <div class="section-order-action">
+                                        <a href="#" class="body-order-see">See Detail</a>
+                                    </div>
+                                </article>
+                                <article class="section-order-item">
+                                    <div class="section-order-buyer">
+                                        <img class="body-order-image" src="../../assets/img/user.png" alt="">
+                                        <strong class="body-order-name">Yamato Santosa</strong>
+                                    </div>
+                                    <div class="section-order-service">
+                                        <p class="body-order-text">Help you to make a Poster Design for marketing needs</p>
+                                    </div>
+                                    <div class="section-order-dueon">
+                                        <span class="body-order-date">7 April 2021</span>
+                                    </div>
+                                    <div class="section-order-price">
+                                        <strong class="body-order-price">$60</strong>
+                                    </div>
+                                    <div class="section-order-action">
+                                        <a href="#" class="body-order-see">See Detail</a>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+{% endblock %}

@@ -1,0 +1,145 @@
+{% set title = 'Order Detail' %}
+{% extends "user-dashboard.njk" %}
+
+{% block content %}
+    <div class="pb-20" style="background-color: #f8f8f8;">
+        <div class="absolute top-16 bg-kuning-100 h-96 w-full z-10"></div>
+        <div class="container-kanoo relative z-20 pt-16 md:pt-24">
+            <div class="lg:grid lg:grid-cols-12 gap-8">
+                <div class="col-span-4 rounded-8px bg-white py-10 px-6 mb-10 lg:mb-0">
+                    <div class="pb-10 mb-10 border-b border-black-10">
+                        <h1 class="mb-2 font-semibold text-28px text-black-100">Order #FO4161D446A08 </h1>
+                        <p class="font-semibold text-20px">From buyer <span class="text-meja-100">Susanto Hoo</span></p>
+                    </div>
+                    <div class="mb-12">
+                        <h3 class="mb-4 text-24px text-black-100 font-semibold">Description</h3>
+                        <div class="border border-black-10 rounded-4px p-4 flex items-center space-x-4">
+                            <div class="w-4/12">
+                                <img src="../../assets/img/order-desc.png" class="w-full">
+                            </div>
+                            <div class="w-8/12">
+                                <p class="mb-2 font-semibold text-14px text-black-100">
+                                    Help you to make a Poster Design for marketing needs
+                                </p>
+                                <svg class="inline-block align-middle" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9479 2.80422L15.6069 8.19222L21.5529 9.05622C22.4199 9.18222 22.7669 10.2482 22.1389 10.8602L17.8359 15.0542L18.8519 20.9762C18.9999 21.8402 18.0939 22.4982 17.3179 22.0912L11.9999 19.2952L6.68195 22.0912C5.90595 22.4992 4.99995 21.8402 5.14795 20.9762L6.16395 15.0542L1.85995 10.8602C1.23295 10.2482 1.57895 9.18322 2.44595 9.05722L8.39195 8.19322L11.0509 2.80522C11.4399 2.01822 12.5599 2.01822 12.9479 2.80422Z" fill="#FFB422"/>
+                                </svg>
+                                <span class="ml-1 inline-block align-middle text-black-50 text-16px font-semibold">5.0 (11)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <h1 class="mb-4 text-black-100 text-24px font-semibold">Order Requirement</h1>
+                        <p class="text-black-70 text-16px leading-28px mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adnun minim veniam.
+                        </p>
+                        <a href="#" class="font-semibold text-meja-100 text-20px">Read more</a>
+                    </div>
+                </div>
+                <div class="col-span-8 rounded-8px bg-white py-10 px-8">
+                    <div class="mb-10 flex flex-col lg:flex-row lg:items-center justify-between pb-10 border-b-2 border-black-10">
+                        <div class="mb-4 lg:mb-0">
+                            <p class="mb-3 font-semibold text-black-100 text-16px">Status : Completed</p>
+                            <h1 class="text-32px text-meja-100 font-bold">$500.00</h1>
+                        </div>
+                        <div>
+                            <p class="text-black-50 font-semibold text-16px mb-2">Order start from 10 AM 8 April 2021</p>
+                            <div class="flex font-semibold space-x-11">
+                                <div>
+                                    <label class="text-16px text-black-100">Duration</label>
+                                    <p class="text-16px text-meja-100">7 day</p>
+                                </div>
+                                <div>
+                                    <label class="text-16px text-black-100">Finished on </label>
+                                    <p class="text-16px text-meja-100">10.00 AM 14 April 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-12">
+                        <h1 class="text-28px font-semibold text-black-100">Order Progress</h1>
+                        <p class="mb-2 text-16px font-semibold text-black-50">1 Milestone - 1/1 Completed</p>
+                        <div class="overflow-x-auto bg-white relative">
+                            <table class="table-auto w-full whitespace-nowrap relative">
+                                <thead>
+                                    <tr class="text-left">
+                                        <th class="border-b-2 border-black-10 text-16px py-4 pr-10 font-semibold">
+                                            No
+                                        </th>
+                                        <th class="border-b-2 border-black-10 text-16px py-4 pr-10 font-semibold">
+                                            Milestone
+                                        </th>
+                                        <th class="border-b-2 border-black-10 text-16px py-4 pr-10 font-semibold">
+                                            Duration
+                                        </th>
+                                        <th class="border-b-2 border-black-10 text-16px py-4 pr-10 font-semibold">
+                                            Due on
+                                        </th>
+                                        <th class="border-b-2 border-black-10 text-16px py-4 pr-10 font-semibold">
+                                            Price
+                                        </th>
+                                        <th class="border-b-2 border-black-10 text-16px py-4 pr-10 font-semibold">
+                                            Status
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b-2 border-black-10 text-black-70 text-14px">
+                                        <td class="py-4 pr-10">
+                                            1.
+                                        </td>
+                                        <td class="py-4 pr-10">
+                                            Character Set Illustration
+                                        </td>
+                                        <td class="py-4 pr-10">
+                                            7 day
+                                        </td>
+                                        <td class="py-4 pr-10">
+                                            10.00 AM 14 April 2021
+                                        </td>
+                                        <td class="py-4 pr-10">
+                                            $500.00
+                                        </td>
+                                        <td class="py-4 pr-10">
+                                            Completed
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="mb-4 text-24px font-semibold text-black-100">Order Review</h1>
+                        <div class="bg-white border border-black-10 rounded-4px p-6">
+                            <div class="mb-4 flex flex-col md:flex-row items-start md:items-center justify-between">
+                                <div class="flex items-center space-x-3">
+                                    <img src="https://placekitten.com/50/50" class="w-10 h-10 rounded-full">
+                                    <p class="text-black-100 text-16px font-semibold">Surya Subakniono</p>
+                                </div>
+                                <div class="flex items-center space-x-1 mt-2 md:mt-0">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.948 2.80422L15.607 8.19222L21.553 9.05622C22.42 9.18222 22.767 10.2482 22.139 10.8602L17.836 15.0542L18.852 20.9762C19 21.8402 18.094 22.4982 17.318 22.0912L12 19.2952L6.68201 22.0912C5.90601 22.4992 5.00001 21.8402 5.14801 20.9762L6.16401 15.0542L1.86001 10.8602C1.23301 10.2482 1.57901 9.18322 2.44601 9.05722L8.39201 8.19322L11.051 2.80522C11.44 2.01822 12.56 2.01822 12.948 2.80422Z" fill="#FFB422"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.948 2.80422L15.607 8.19222L21.553 9.05622C22.42 9.18222 22.767 10.2482 22.139 10.8602L17.836 15.0542L18.852 20.9762C19 21.8402 18.094 22.4982 17.318 22.0912L12 19.2952L6.68201 22.0912C5.90601 22.4992 5.00001 21.8402 5.14801 20.9762L6.16401 15.0542L1.86001 10.8602C1.23301 10.2482 1.57901 9.18322 2.44601 9.05722L8.39201 8.19322L11.051 2.80522C11.44 2.01822 12.56 2.01822 12.948 2.80422Z" fill="#FFB422"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.948 2.80422L15.607 8.19222L21.553 9.05622C22.42 9.18222 22.767 10.2482 22.139 10.8602L17.836 15.0542L18.852 20.9762C19 21.8402 18.094 22.4982 17.318 22.0912L12 19.2952L6.68201 22.0912C5.90601 22.4992 5.00001 21.8402 5.14801 20.9762L6.16401 15.0542L1.86001 10.8602C1.23301 10.2482 1.57901 9.18322 2.44601 9.05722L8.39201 8.19322L11.051 2.80522C11.44 2.01822 12.56 2.01822 12.948 2.80422Z" fill="#FFB422"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.948 2.80422L15.607 8.19222L21.553 9.05622C22.42 9.18222 22.767 10.2482 22.139 10.8602L17.836 15.0542L18.852 20.9762C19 21.8402 18.094 22.4982 17.318 22.0912L12 19.2952L6.68201 22.0912C5.90601 22.4992 5.00001 21.8402 5.14801 20.9762L6.16401 15.0542L1.86001 10.8602C1.23301 10.2482 1.57901 9.18322 2.44601 9.05722L8.39201 8.19322L11.051 2.80522C11.44 2.01822 12.56 2.01822 12.948 2.80422Z" fill="#FFB422"/>
+                                    </svg>
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M12.948 2.80422L15.607 8.19222L21.553 9.05622C22.42 9.18222 22.767 10.2482 22.139 10.8602L17.836 15.0542L18.852 20.9762C19 21.8402 18.094 22.4982 17.318 22.0912L12 19.2952L6.68201 22.0912C5.90601 22.4992 5.00001 21.8402 5.14801 20.9762L6.16401 15.0542L1.86001 10.8602C1.23301 10.2482 1.57901 9.18322 2.44601 9.05722L8.39201 8.19322L11.051 2.80522C11.44 2.01822 12.56 2.01822 12.948 2.80422Z" fill="#FFB422"/>
+                                    </svg>
+                                    <span class="pl-1 text-black-50 font-semibold text-16px">5.0</span>
+                                </div>
+                            </div>
+                            <p class="leading-28px text-16px text-black-70">Lorem ipsum dolor sit amet, consectetur adi scing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adnun minim veniam. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim adnun minim veniam.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

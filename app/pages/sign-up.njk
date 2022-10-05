@@ -1,0 +1,61 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Sign Up' %}
+{% set style = 'sign-up' %}
+{% extends "landing-page.njk" %}
+
+{% block content %}
+  <div class="flex w-full h-full max-h-screen">
+        <div class="lg:w-1/2 px-4 lg:px-20 py-16 ">
+            <h1 class="text-40px font-semibold mb-4 leading-tight">Bergabung di Kanno</h1>
+            <p class="text-black-70 text-16px mb-9">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt sed do elusmod tempor.</p>
+            <form action="#">
+                <div class="mb-5">
+                    <input type="text" class="w-full text-16px placeholder-black-50 rounded-4px border border-black-30 px-4 h-56px" placeholder="Nama Lengkap">
+                </div>
+                <div class="mb-5 relative">
+                    <svg class="absolute left-4 top-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 11C12.7911 11 13.5645 10.7654 14.2223 10.3259C14.8801 9.88635 15.3928 9.26164 15.6955 8.53074C15.9983 7.79983 16.0775 6.99556 15.9231 6.21964C15.7688 5.44372 15.3878 4.73098 14.8284 4.17157C14.269 3.61216 13.5563 3.2312 12.7804 3.07686C12.0044 2.92252 11.2002 3.00173 10.4693 3.30448C9.73836 3.60723 9.11365 4.11992 8.67412 4.77772C8.2346 5.43552 8 6.20888 8 7C8 8.06087 8.42143 9.07828 9.17157 9.82843C9.92172 10.5786 10.9391 11 12 11ZM12 5C12.3956 5 12.7822 5.1173 13.1111 5.33706C13.44 5.55683 13.6964 5.86918 13.8478 6.23463C13.9991 6.60009 14.0387 7.00222 13.9616 7.39018C13.8844 7.77814 13.6939 8.13451 13.4142 8.41422C13.1345 8.69392 12.7781 8.8844 12.3902 8.96157C12.0022 9.03874 11.6001 8.99914 11.2346 8.84776C10.8692 8.69639 10.5568 8.44004 10.3371 8.11114C10.1173 7.78224 10 7.39556 10 7C10 6.46957 10.2107 5.96086 10.5858 5.58579C10.9609 5.21072 11.4696 5 12 5Z" fill="#8F9090"/>
+                        <path d="M12 13C10.1435 13 8.36301 13.7375 7.05025 15.0503C5.7375 16.363 5 18.1435 5 20C5 20.2652 5.10536 20.5196 5.29289 20.7071C5.48043 20.8946 5.73478 21 6 21C6.26522 21 6.51957 20.8946 6.70711 20.7071C6.89464 20.5196 7 20.2652 7 20C7 18.6739 7.52678 17.4021 8.46447 16.4645C9.40215 15.5268 10.6739 15 12 15C13.3261 15 14.5979 15.5268 15.5355 16.4645C16.4732 17.4021 17 18.6739 17 20C17 20.2652 17.1054 20.5196 17.2929 20.7071C17.4804 20.8946 17.7348 21 18 21C18.2652 21 18.5196 20.8946 18.7071 20.7071C18.8946 20.5196 19 20.2652 19 20C19 18.1435 18.2625 16.363 16.9497 15.0503C15.637 13.7375 13.8565 13 12 13Z" fill="#8F9090"/>
+                    </svg>
+                    <input type="text" class="w-full text-16px placeholder-black-50 rounded-4px border border-black-30 pl-12 h-56px" placeholder="Nomor Telepon">
+                </div>
+                <div class="mb-5">
+                    <input type="email" class="w-full text-16px placeholder-black-50 rounded-4px border border-black-30 px-4 h-56px" placeholder="Alamat Email">
+                </div>
+                <div class="mb-5 relative">
+                    <input id="password-field" type="password" class="w-full text-16px placeholder-black-50 rounded-4px border border-black-30 px-4 h-56px" placeholder="Password" name="password" id="password">
+                    <svg id="togglePassword" class="absolute right-5 top-4 cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.8701 11.5004C21.2301 10.3904 17.7101 4.82036 11.7301 5.00036C6.20007 5.14036 3.00007 10.0004 2.13007 11.5004C2.0423 11.6524 1.99609 11.8248 1.99609 12.0004C1.99609 12.1759 2.0423 12.3483 2.13007 12.5004C2.76007 13.5904 6.13007 19.0004 12.0201 19.0004H12.2701C17.8001 18.8604 21.0101 14.0004 21.8701 12.5004C21.9578 12.3483 22.004 12.1759 22.004 12.0004C22.004 11.8248 21.9578 11.6524 21.8701 11.5004ZM12.2201 17.0004C7.91007 17.1004 5.10007 13.4104 4.22007 12.0004C5.22007 10.3904 7.83007 7.10036 11.8301 7.00036C16.1201 6.89036 18.9401 10.5904 19.8301 12.0004C18.8001 13.6104 16.2201 16.9004 12.2201 17.0004Z" fill="#222222"/>
+                        <path d="M12 8.5C11.3078 8.5 10.6311 8.70527 10.0555 9.08986C9.47993 9.47444 9.03133 10.0211 8.76642 10.6606C8.50152 11.3001 8.4322 12.0039 8.56725 12.6828C8.7023 13.3618 9.03564 13.9854 9.52513 14.4749C10.0146 14.9644 10.6383 15.2977 11.3172 15.4327C11.9961 15.5678 12.6999 15.4985 13.3394 15.2336C13.9789 14.9687 14.5256 14.5201 14.9101 13.9445C15.2947 13.3689 15.5 12.6922 15.5 12C15.5 11.0717 15.1313 10.1815 14.4749 9.52513C13.8185 8.86875 12.9283 8.5 12 8.5ZM12 13.5C11.7033 13.5 11.4133 13.412 11.1666 13.2472C10.92 13.0824 10.7277 12.8481 10.6142 12.574C10.5007 12.2999 10.4709 11.9983 10.5288 11.7074C10.5867 11.4164 10.7296 11.1491 10.9393 10.9393C11.1491 10.7296 11.4164 10.5867 11.7074 10.5288C11.9983 10.4709 12.2999 10.5006 12.574 10.6142C12.8481 10.7277 13.0824 10.92 13.2472 11.1666C13.412 11.4133 13.5 11.7033 13.5 12C13.5 12.3978 13.342 12.7794 13.0607 13.0607C12.7794 13.342 12.3978 13.5 12 13.5Z" fill="#222222"/>
+                    </svg>
+                </div>
+                <div class="mb-8 relative">
+                    <svg class="absolute top-4 right-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0002 15.5002C11.8686 15.5009 11.7381 15.4757 11.6163 15.426C11.4944 15.3762 11.3836 15.3029 11.2902 15.2102L7.29019 11.2102C7.19695 11.1169 7.12299 11.0063 7.07253 10.8844C7.02207 10.7626 6.99609 10.632 6.99609 10.5002C6.99609 10.3683 7.02207 10.2378 7.07253 10.1159C7.12299 9.99411 7.19695 9.88342 7.29019 9.79018C7.38342 9.69695 7.49411 9.62299 7.61594 9.57253C7.73776 9.52206 7.86833 9.49609 8.00019 9.49609C8.13204 9.49609 8.26261 9.52206 8.38444 9.57253C8.50626 9.62299 8.61695 9.69695 8.71019 9.79018L12.0002 13.1002L15.3002 9.92019C15.3922 9.8179 15.5043 9.73569 15.6295 9.6787C15.7547 9.62171 15.8903 9.59118 16.0279 9.589C16.1654 9.58682 16.302 9.61304 16.4289 9.66603C16.5559 9.71903 16.6705 9.79764 16.7657 9.89697C16.8609 9.99629 16.9346 10.1142 16.9821 10.2433C17.0297 10.3724 17.0501 10.5099 17.042 10.6472C17.034 10.7846 16.9977 10.9188 16.9355 11.0414C16.8732 11.1641 16.7863 11.2726 16.6802 11.3602L12.6802 15.2202C12.4973 15.3965 12.2542 15.4966 12.0002 15.5002Z" fill="#222222"/>
+                    </svg>
+                    <select name="sort_by" id="sort-by" class="w-full appearance-none text-16px text-black-100 bg-white-90 border border-black-30 rounded-4px h-56px pl-4 pr-10">
+                        <option value="ratings">Daftar Sebagai Freelancer</option>
+                    </select>
+                </div>
+                <div class="mb-10">
+                    <label class="flex justify-start items-start">
+                        <input type="checkbox" class="opacity-0 absolute" id="checkbox">
+                        <div class="bg-white border rounded-5px border-black-30 w-6 h-6 flex cursor-pointer flex-shrink-0 justify-center items-center mr-4 focus-within:border-blue-500">
+                            <svg class="fill-current hidden w-4 h-4 text-white" viewBox="0 0 20 20"><path d="M0 11l2-2 5 5L18 3l2 2L7 18z"/></svg>
+                        </div>
+                        <div class="select-none text-16px">Dengan ini saya menyetujui syarat dan ketentuan</div>
+                    </label>
+                </div>
+                <div class="mb-9">
+                    <button type="submit" class="rounded-4px text-center py-3 w-full bg-oren-100 text-white font-semibold">Buat Akun Sekarang</button>
+                </div>
+                <div class="mb-16">
+                    <a href="#" class="block text-center underline text-oren-100 text-14px font-semibold">Sudah punya akun? Klik disini untuk login</a>
+                </div>
+            </form>
+        </div>
+        <div class="hidden lg:block lg:w-1/2 h-full fixed right-0">
+            <img class="h-full w-full object-cover object-left-bottom" src="../assets/img/signup-cover-crop.png">
+        </div>
+    </div>
+{% endblock %}

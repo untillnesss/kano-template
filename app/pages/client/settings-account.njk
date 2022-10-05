@@ -1,0 +1,61 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Client Settings' %}
+{% set style = 'settings' %}
+{% set script = 'settings' %}
+{% extends "client-dashboard.njk" %}
+
+{% block content %}
+    <!-- MAIN -->
+    <main id="main-settings">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-between">
+                <aside class="aside-settings">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
+                        <h3 class="aside-title">Settings</h3>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link aside-link-active">Account</a>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link">Security</a>
+                    </div>
+                    <div>
+                        <a href="./settings-billings" class="aside-link">Billings</a>
+                    </div>
+                </aside>
+                <div class="main-line"></div>
+                <section class="section-settings">
+                    <div class="mb-4px md:mb-8px">
+                        <h1 class="section-title">Account Settings</h1>
+                    </div>
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
+                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
+                    </div>
+                    <div class="section-settings-container">
+                        <div class="row-flex-kanoo items-center justify-between mb-36px md:mb-42px lg:mb-48px xl:mb-56px">
+                            <div class="flex items-center mb-12px md:mb-0">
+                                <img class="account-user-image" src="../../assets/img/user.png" alt="">
+                                <strong class="account-user-name">Yamato Santosa</strong>
+                            </div>
+                            <a href="./settings-account-edit" class="section-button-link">Edit Profile</a>
+                        </div>
+                        <div class="mb-28px md:mb-42px lg:mb-46px">
+                            <h5 class="section-subtitle">My Email</h5>
+                            <h6 class="account-user-email">agusghantenk@gmail.com</h6>
+                        </div>
+                        <div>
+                            <h5 class="section-subtitle">My Skills</h5>
+                            <div class="row-flex-kanoo items-center mt-8px md:mt-0">
+                                <div class="account-label-skill">UI/UX Design</div>
+                                <div class="account-label-skill">Logo Design</div>
+                                <div class="account-label-skill">Visual Effect</div>
+                                <div class="account-label-skill">Writing</div>
+                                <div class="account-label-skill">Internet Marketing</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+{% endblock %}

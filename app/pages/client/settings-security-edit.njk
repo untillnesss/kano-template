@@ -1,0 +1,54 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Client Settings Security Edit' %}
+{% set style = 'settings' %}
+{% set script = 'settings' %}
+{% extends "client-dashboard.njk" %}
+
+{% block content %}
+ <!-- MAIN -->
+    <main id="main-settings">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-between">
+                <aside class="aside-settings">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
+                        <h3 class="aside-title">Settings</h3>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link">Account</a>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link aside-link-active">Security</a>
+                    </div>
+                    <div>
+                        <a href="./settings-billings" class="aside-link">Billings</a>
+                    </div>
+                </aside>
+                <div class="main-line"></div>
+                <section class="section-settings">
+                    <div class="mb-4px md:mb-8px">
+                        <h1 class="section-title">Security Settings</h1>
+                    </div>
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
+                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
+                    </div>
+                    <div class="section-settings-container">
+                        <h5 class="section-subtitle mb-16px">Password</h5>
+                        <div class="mb-16px">
+                            <input class="section-form-input w-full" type="password" placeholder="Enter your current password">
+                        </div>
+                        <div class="mb-16px">
+                            <input class="section-form-input w-full" type="password" placeholder="Enter your new password">
+                        </div>
+                        <div class="mb-48px text-right">
+                            <p class="text-14px md:text-16px text-black-50 leading-28px">Make your password more stronger with <span class="text-danger-condition">8 Character</span> <span class="text-success-condition">1 Uppercase</span> <span class="text-danger-condition">1 Number</span></p>
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <a href="./settings-security.html" class="section-button-link-cancel">Cancel</a>
+                            <button class="section-button-link ml-14px md:ml-28px xl:ml-32px">Save Password</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+{% endblock %}

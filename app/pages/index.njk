@@ -1,0 +1,473 @@
+<!-- Nama pages-->
+{% set title = 'Kanno.id Marketplace' %}
+{% set style = 'home' %}
+{% set script = 'home' %}
+{% extends "landing-page.njk" %}
+{% set style = 'home' %}
+
+{% block content %}
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo">
+                <div class="header-left">
+                    <h1 class="header-title">Hire Top Talent Indonesia<br class="hidden md:block"/> di <br class="block md:hidden"/> Platform Kanno</h1>
+                    <p class="header-text">Kanno adalah platform penyedia service freelance dari segala bidang terbaik di Indonesia, anda dapat menemukan talent yang dapat membantu anda dalam mengembangkan bisnis atau keperluan anda dalam hal Digital.</p>
+                    <form class="w-full flex items-center relative z-5">
+                        <div class="relative">
+                            <span class="w-8 absolute top-1/2 left-2 transform -translate-y-1/2">
+                                <svg class="mx-auto" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7 0C3.14585 0 0 3.14585 0 7C0 10.8541 3.14585 14 7 14C8.748 14 10.345 13.348 11.5742 12.2812L12 12.707V14L17.5859 19.5859C18.1379 20.1379 19.0339 20.1379 19.5859 19.5859C20.1379 19.0339 20.1379 18.1379 19.5859 17.5859L14 12H12.707L12.2812 11.5742C13.348 10.345 14 8.748 14 7C14 3.14585 10.8541 0 7 0ZM7 2C9.77327 2 12 4.22673 12 7C12 9.77327 9.77327 12 7 12C4.22673 12 2 9.77327 2 7C2 4.22673 4.22673 2 7 2Z" fill="#8F9090"/>
+                                </svg>
+                            </span>
+                            <input type="text" class="form-input" placeholder="Tulis nama service">
+                        </div>
+                        <button type="submit" class="form-button">Cari</button>
+                    </form>
+                    <div class="header-left-shadow"></div>
+                </div>
+                <div class="header-right">
+                    <div class="header-shadow-gradient"></div>
+                    <img class="header-image-group" src="../assets/img/header-image-group.png" alt="Header Group"/>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- SECTION: CARI SERVICE -->
+    <section id="cari-service-section">
+        <div class="container-kanoo">
+            <div class="row-block-kanoo">
+                <div class="cari-service-icon">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.9993 2.66602C6.86048 2.66602 2.66602 6.86048 2.66602 11.9993C2.66602 17.1382 6.86048 21.3327 11.9993 21.3327C14.33 21.3327 16.4594 20.4634 18.0983 19.041L18.666 19.6087V21.3327L26.1139 28.7806C26.8499 29.5166 28.0446 29.5166 28.7806 28.7806C29.5166 28.0446 29.5166 26.8499 28.7806 26.1139L21.3327 18.666H19.6087L19.041 18.0983C20.4634 16.4594 21.3327 14.33 21.3327 11.9993C21.3327 6.86048 17.1382 2.66602 11.9993 2.66602ZM11.9993 5.33268C15.697 5.33268 18.666 8.30166 18.666 11.9993C18.666 15.697 15.697 18.666 11.9993 18.666C8.30166 18.666 5.33268 15.697 5.33268 11.9993C5.33268 8.30166 8.30166 5.33268 11.9993 5.33268Z" fill="#FDFEFF"/>
+                    </svg>
+                </div>
+                <h2 class="service-title">Temukan service dari freelancer yang<br class="hidden md:block"/>cocok dengan kebutuhanmu!</h2>
+                <a href="#" class="service-link">Cari Service</a>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN: CATEGORY HIGHTLIGHTS  -->
+    <main id="category-hightlights">
+        <div class="container-kanoo-fluid">
+            <div class="w-full mb-32px">
+                <div class="container-kanoo">
+                    <div class="row-flex-kanoo">
+                        <div>
+                            <h3 class="section-title mb-10px md:mb-12px xl:mb-16px">Category Hightlights</h3>
+                            <p class="w-10/12 text-16px md:text-18px lg:text-22px xl:text-24px text-black-70">Berikut adalah kategori service yang bisa kamu pilih</p>
+                        </div>
+                        <div class="hidden md:flex items-end">
+                            <div class="swiper-button-prev-category">
+                                <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.21573 10.0009L11.5841 16.3692C12.2741 17.0592 12.2741 18.1792 11.5841 18.8692C10.8941 19.5592 9.77406 19.5592 9.08406 18.8692L1.39406 11.1792C0.742394 10.5276 0.742394 9.47255 1.39406 8.82255L9.08406 1.13255C9.77406 0.442554 10.8941 0.442554 11.5841 1.13255C12.2741 1.82255 12.2741 2.94255 11.5841 3.63255L5.21573 10.0009Z" fill="#EA3AA1"/>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next-category ml-40px">
+                                <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M7.78427 9.99911L1.41594 3.63078C0.725937 2.94078 0.725937 1.82078 1.41594 1.13078C2.10594 0.440781 3.22594 0.440781 3.91594 1.13078L11.6059 8.82078C12.2576 9.47245 12.2576 10.5274 11.6059 11.1774L3.91594 18.8674C3.22594 19.5574 2.10594 19.5574 1.41594 18.8674C0.725937 18.1774 0.725937 17.0574 1.41594 16.3674L7.78427 9.99911Z" fill="#EA3AA1"/>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="category-swiper-container">
+                <div id="swiper-category" class="swiper-container">
+                    <div class="swiper-wrapper items-center">
+                        <a href="#" class="swiper-slide">
+                            <img class="swiper-category-image" src="../assets/img/home-categor-1.png" alt="#">
+                            <div class="swiper-category-cover">
+                                <span class="swiper-category-text">Design Graphic</span>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img class="swiper-category-image" src="../assets/img/home-categor-2.png" alt="#">
+                            <div class="swiper-category-cover">
+                                <span class="swiper-category-text">UI/UX</span>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img class="swiper-category-image" src="../assets/img/home-categor-3.png" alt="#">
+                            <div class="swiper-category-cover">
+                                <span class="swiper-category-text">Web Developer</span>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img class="swiper-category-image" src="../assets/img/home-categor-4.png" alt="#">
+                            <div class="swiper-category-cover">
+                                <span class="swiper-category-text">Design Graphic</span>
+                            </div>
+                        </a>
+                        <a href="#" class="swiper-slide">
+                            <img class="swiper-category-image" src="../assets/img/home-categor-1.png" alt="#">
+                            <div class="swiper-category-cover">
+                                <span class="swiper-category-text">Design Graphic</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- SECTION: FEATURE HIGHLIGHTS -->
+    <section id="feature-highlights">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo">
+                <div class="w-full mb-40px">
+                    <h3 class="section-title">Feature Highlights</h3>
+                </div>
+                <div class="feature-left w-full md:w-7/12 lg:pr-12 xl:pr-20">
+                    <div class="w-full">
+                        <div class="feature-box feature-active">
+                            <h2 class="feature-title">Cari Talent</h2>
+                            <p class="feature-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h2 class="feature-title">Jasa Freelnace</h2>
+                            <p class="feature-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                        <div class="feature-box">
+                            <h2 class="feature-title">Rekomendasi Service</h2>
+                            <p class="feature-text">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="feature-right w-full md:w-5/12 mb-32px lg:mb-0 relative">
+                    <img class="primary-image" src="../assets/img/home-feature-1.png" height="540" width="458" alt="#">
+                    <div class="icon-above-image-primary">
+                        <div class="icon-above-image-inseide-box">
+                            <svg width="57" height="58" viewBox="0 0 57 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.375 5.05664C12.2214 5.05664 4.75 12.615 4.75 21.8751C4.75 31.1352 12.2214 38.6935 21.375 38.6935C25.5265 38.6935 29.3194 37.1271 32.2388 34.564L33.25 35.587V38.6935L46.5166 52.1145C47.8276 53.4407 49.9556 53.4407 51.2666 52.1145C52.5776 50.7882 52.5776 48.6355 51.2666 47.3092L38 33.8882H34.9292L33.918 32.8653C36.4516 29.9119 38 26.0749 38 21.8751C38 12.615 30.5286 5.05664 21.375 5.05664ZM21.375 9.86191C27.9615 9.86191 33.25 15.2119 33.25 21.8751C33.25 28.5382 27.9615 33.8882 21.375 33.8882C14.7885 33.8882 9.5 28.5382 9.5 21.8751C9.5 15.2119 14.7885 9.86191 21.375 9.86191Z" fill="#FDFEFF"/>
+                            </svg>
+                        </div>
+                        <div class="feature-box-shadow-primary"></div>
+                    </div>
+                    <div class="icon-above-image-secondary">
+                        <svg width="48" height="49" viewBox="0 0 48 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M35.9145 6.15866C35.3132 6.16524 34.6939 6.24089 34.0629 6.39972C30.9329 7.19081 28.4907 9.91592 28.0707 13.1531C27.8645 14.7404 28.1244 16.2518 28.7152 17.5751L9.17228 37.3453C8.06828 38.4621 8.06828 40.275 9.17228 41.3918C10.2763 42.5087 12.0683 42.5087 13.1723 41.3918L24.2582 30.177L34.9067 40.9532C36.4207 42.4848 38.8789 42.4848 40.3949 40.9532C41.9089 39.4196 41.9089 36.9327 40.3949 35.4011L29.7426 24.6288L32.7152 21.6216C34.0232 22.219 35.5177 22.4815 37.0863 22.2736C40.2863 21.8487 42.9801 19.3781 43.7621 16.2117C44.0781 14.9351 44.0667 13.7093 43.8207 12.5722C43.6527 11.7994 42.6677 11.5534 42.1137 12.1138L40.0004 14.2517C38.8964 15.3685 37.1044 15.3685 36.0004 14.2517C34.8964 13.1349 34.8964 11.322 36.0004 10.2052L38.1137 8.06732C38.6677 7.50688 38.4246 6.5104 37.6606 6.34044C37.0986 6.21601 36.5157 6.15209 35.9145 6.15866ZM10.059 6.74746C9.6115 6.79248 9.17725 6.99139 8.84025 7.33231L7.16056 9.03153C6.48656 9.71337 6.38056 10.7811 6.91056 11.5843L8.8129 14.473C9.5549 15.5999 10.805 16.275 12.141 16.275H13.1723L18.5863 21.752L21.4145 18.891L16.0004 13.4139V12.3707C16.0004 11.0192 15.3332 9.75248 14.2192 9.00387L11.3637 7.07941C10.9667 6.81132 10.5065 6.70245 10.059 6.74746Z" fill="#EA3AA1"/>
+                        </svg>
+                    </div>
+                    <div class="icon-above-image-third">
+                        <div class="icon-above-image-inseide-box">
+                            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.9998 34.0386L31.1097 39.6007C32.547 40.478 34.3198 39.1741 33.9385 37.5216L31.5203 27.0373L39.5705 19.9822C40.8392 18.8712 40.1608 16.7625 38.4888 16.6197L27.8922 15.7109L23.747 5.81631C23.0925 4.25654 20.9072 4.25654 20.2527 5.81631L16.1075 15.7109L5.51084 16.6197C3.83884 16.7625 3.16051 18.8712 4.42917 19.9822L12.4793 27.0373L10.0612 37.5216C9.67984 39.1741 11.4527 40.478 12.89 39.6007L21.9998 34.0386Z" fill="#EA3AA1"/>
+                            </svg>
+                        </div>
+                        <div class="feature-box-shadow-third"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN: FREELANCE LIST -->
+    <main id="freelance-list">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo items-center">
+                <h3 class="section-title text-white">Freelance Service List</h3>
+                <a href="#" class="section-title-link hidden md:block">Lihat selengkapnya</a>
+            </div>
+            <div class="row-grid-kanoo">
+                <a href="#" class="freelance-list-article">
+                    <article class="w-full">
+                        <div class="mb-14px xl:mb-16px">
+                            <img class="freelance-image-primary" src="../assets/img/freelance-list-1.png" alt="#">
+                        </div>
+                        <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                            <div class="mr-2">
+                                <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                            </div>
+                            <div>
+                                <div class="freelance-user-name">Yomoto Santoso</div>
+                                <span class="freelance-user-level">Level 2 Seller</span>
+                            </div>
+                        </div>
+                        <div class="mb-16px lg:mb-20px xl:mb-22px">
+                            <h2 class="freelance-article-text">Help you to make a Poster Design for marketing needs</h2>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="inline-flex items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                </svg>
+                                <span class="freelance-user-stars">5.0 (11)</span>
+                            </div>
+                            <div>
+                                <span class="freelance-article-price">Start $10</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="freelance-list-article">
+                    <article class="w-full">
+                        <div class="mb-14px xl:mb-16px">
+                            <img class="freelance-image-primary" src="../assets/img/freelance-list-2.png" alt="#">
+                        </div>
+                        <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                            <div class="mr-2">
+                                <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                            </div>
+                            <div>
+                                <div class="freelance-user-name">Yomoto Santoso</div>
+                                <span class="freelance-user-level">Level 2 Seller</span>
+                            </div>
+                        </div>
+                        <div class="mb-16px lg:mb-20px xl:mb-22px">
+                            <h2 class="freelance-article-text">Help you to make a Poster Design for marketing needs</h2>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="inline-flex items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                </svg>
+                                <span class="freelance-user-stars">5.0 (11)</span>
+                            </div>
+                            <div>
+                                <span class="freelance-article-price">Start $10</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="freelance-list-article">
+                    <article class="w-full">
+                        <div class="mb-14px xl:mb-16px">
+                            <img class="freelance-image-primary" src="../assets/img/freelance-list-3.png" alt="#">
+                        </div>
+                        <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                            <div class="mr-2">
+                                <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                            </div>
+                            <div>
+                                <div class="freelance-user-name">Yomoto Santoso</div>
+                                <span class="freelance-user-level">Level 2 Seller</span>
+                            </div>
+                        </div>
+                        <div class="mb-16px lg:mb-20px xl:mb-22px">
+                            <h2 class="freelance-article-text">Help you to make a Poster Design for marketing needs</h2>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="inline-flex items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                </svg>
+                                <span class="freelance-user-stars">5.0 (11)</span>
+                            </div>
+                            <div>
+                                <span class="freelance-article-price">Start $10</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <a href="#" class="freelance-list-article">
+                    <article class="w-full">
+                        <div class="mb-14px xl:mb-16px">
+                            <img class="freelance-image-primary" src="../assets/img/freelance-list-4.png" alt="#">
+                        </div>
+                        <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                            <div class="mr-2">
+                                <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                            </div>
+                            <div>
+                                <div class="freelance-user-name">Yomoto Santoso</div>
+                                <span class="freelance-user-level">Level 2 Seller</span>
+                            </div>
+                        </div>
+                        <div class="mb-16px lg:mb-20px xl:mb-22px">
+                            <h2 class="freelance-article-text">Help you to make a Poster Design for marketing needs</h2>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div class="inline-flex items-center">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                </svg>
+                                <span class="freelance-user-stars">5.0 (11)</span>
+                            </div>
+                            <div>
+                                <span class="freelance-article-price">Start $10</span>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </div>
+            <div class="row-flex-kanoo">
+                <a href="#" class="section-title-link block md:hidden mt-28px mx-auto">Lihat selengkapnya</a>
+            </div>
+        </div>
+    </main>
+    <!-- SECTION: CLIENT KAMI -->
+    <section id="client-kami">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-center items-center">
+                <img src="../assets/img/partner-gojek.png" alt="#">
+                <img src="../assets/img/partner-google.png" alt="#">
+                <img src="../assets/img/partner-yahoo.png" alt="#">
+                <img src="../assets/img/partner-amazon.png" alt="#">
+                <img src="../assets/img/partner-youtube.png" alt="#">
+            </div>
+        </div>
+    </section>
+    <!-- SECTION: CLIENT TESTIMONIAL -->
+    <section id="client-testimonial">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo">
+                <div>
+                    <h3 class="section-title">Client Testimonial</h3>
+                </div>
+                <div class="flex items-center">
+                    <div class="swiper-pagination relative"></div>
+                </div>
+            </div>
+            <div class="w-full pb-12">
+                <div id="swiper-testimonial" class="swiper-container relative">
+                    <div class="swiper-wrapper-arrow">
+                        <div class="swiper-button-prev-testimonial">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.78 1.57996L6.6 0.399963L0 6.99996L6.6 13.6L7.78 12.42L2.36 6.99996L7.78 1.57996Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <div class="swiper-button-next-testimonial ml-32px">
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.22 12.42L1.4 13.6L8 7.00004L1.4 0.400038L0.22 1.58004L5.64 7.00004L0.22 12.42Z" fill="white"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="flex items-center mb-18px md:mb-24px lg:mb-36px xl:mb-40px">
+                                <div class="mr-12px md:mr-18px lg:mr-20px xl:mr-24px">
+                                    <img class="swiper-user-image" src="../assets/img/user.png" height="72px" width="72px" alt="#">
+                                </div>
+                                <div>
+                                    <div class="swiper-user-name">Yomoto Santoso</div>
+                                    <span class="swiper-user-level">PT Astra Indonesia</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="swiper-user-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex items-center mb-18px md:mb-24px lg:mb-36px xl:mb-40px">
+                                <div class="mr-12px md:mr-18px lg:mr-20px xl:mr-24px">
+                                    <img class="swiper-user-image" src="../assets/img/user.png" height="72px" width="72px" alt="#">
+                                </div>
+                                <div>
+                                    <div class="swiper-user-name">Yomoto Santoso</div>
+                                    <span class="swiper-user-level">PT Astra Indonesia</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="swiper-user-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex items-center mb-18px md:mb-24px lg:mb-36px xl:mb-40px">
+                                <div class="mr-12px md:mr-18px lg:mr-20px xl:mr-24px">
+                                    <img class="swiper-user-image" src="../assets/img/user.png" height="72px" width="72px" alt="#">
+                                </div>
+                                <div>
+                                    <div class="swiper-user-name">Yomoto Santoso</div>
+                                    <span class="swiper-user-level">PT Astra Indonesia</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="swiper-user-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="flex items-center mb-18px md:mb-24px lg:mb-36px xl:mb-40px">
+                                <div class="mr-12px md:mr-18px lg:mr-20px xl:mr-24px">
+                                    <img class="swiper-user-image" src="../assets/img/user.png" height="72px" width="72px" alt="#">
+                                </div>
+                                <div>
+                                    <div class="swiper-user-name">Yomoto Santoso</div>
+                                    <span class="swiper-user-level">PT Astra Indonesia</span>
+                                </div>
+                            </div>
+                            <div>
+                                <p class="swiper-user-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into typesetting industry. Lorem Ipsum has been the industry's.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION: BLOG POST -->
+    <section id="blog-post-section">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo pt-8 mb-40px">
+                <h3 class="section-title">Blog Post</h3>
+                <a href="#" class="section-title-link">Lihat selengkapnya</a>
+            </div>
+            <div class="row-grid-kanoo">
+                <article>
+                    <div>
+                        <img class="blog-article-image" src="../assets/img/blog-post-1.png" alt="#">
+                    </div>
+                    <div class="pt-24px pb-8px">
+                        <h4 class="blog-article-title">
+                            <a href="#">Proses Kinerja Tim Product Development di Startup</a>
+                        </h4>
+                        <p class="blog-article-text">It is a long established fact that a reader will be distracted by the readable</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="blog-article-image" src="../assets/img/blog-post-2.png" alt="#">
+                    </div>
+                    <div class="pt-24px pb-8px">
+                        <h4 class="blog-article-title">
+                            <a href="#">Proses Kinerja Tim Product Development di Startup</a>
+                        </h4>
+                        <p class="blog-article-text">It is a long established fact that a reader will be distracted by the readable</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="blog-article-image" src="../assets/img/blog-post-3.png" alt="#">
+                    </div>
+                    <div class="pt-24px pb-8px">
+                        <h4 class="blog-article-title">
+                            <a href="#">Proses Kinerja Tim Product Development di Startup</a>
+                        </h4>
+                        <p class="blog-article-text">It is a long established fact that a reader will be distracted by the readable</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="blog-article-image" src="../assets/img/blog-post-4.png" alt="#">
+                    </div>
+                    <div class="pt-24px pb-8px">
+                        <h4 class="blog-article-title">
+                            <a href="#">Proses Kinerja Tim Product Development di Startup</a>
+                        </h4>
+                        <p class="blog-article-text">It is a long established fact that a reader will be distracted by the readable</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="blog-article-image" src="../assets/img/blog-post-5.png" alt="#">
+                    </div>
+                    <div class="pt-24px pb-8px">
+                        <h4 class="blog-article-title">
+                            <a href="#">Proses Kinerja Tim Product Development di Startup</a>
+                        </h4>
+                        <p class="blog-article-text">It is a long established fact that a reader will be distracted by the readable</p>
+                    </div>
+                </article>
+                <article>
+                    <div>
+                        <img class="blog-article-image" src="../assets/img/blog-post-6.png" alt="#">
+                    </div>
+                    <div class="pt-24px pb-8px">
+                        <h4 class="blog-article-title">
+                            <a href="#">Proses Kinerja Tim Product Development di Startup</a>
+                        </h4>
+                        <p class="blog-article-text">It is a long established fact that a reader will be distracted by the readable</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -1,0 +1,218 @@
+{% set title = 'Income Statistic' %}
+{% extends "user-dashboard.njk" %}
+
+{% block head %}
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+{% endblock %}
+
+{% block content %}
+    <div class="mb-20 container-kanoo pt-12 md:pt-20">
+        <h1 class="mb-6 sm:mb-10 text-32px text-black-100 font-semibold">Income Statistic</h1>
+        <div class="mb-10 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="border border-black-50 rounded-8px py-5 grid place-items-center">
+                <label class="text-24px text-black-50 mb-4">Total Earnings</label>
+                <p class="text-32px text-oren-100 font-semibold">$2.000</p>
+            </div>
+            <div class="border border-black-50 rounded-8px py-5 grid place-items-center">
+                <label class="text-24px text-black-50 mb-4">Completed Order</label>
+                <p class="text-32px text-oren-100 font-semibold">98</p>
+            </div>
+            <div class="border border-black-50 rounded-8px py-5 grid place-items-center">
+                <label class="text-24px text-black-50 mb-4">Avg Selling Price</label>
+                <p class="text-32px text-oren-100 font-semibold">$2500</p>
+            </div>
+            <div class="border border-black-50 rounded-8px py-5 grid place-items-center">
+                <label class="text-24px text-black-50 mb-4">Earned in April</label>
+                <p class="text-32px text-oren-100 font-semibold">$1.000</p>
+            </div>
+        </div>
+        <h1 class="mb-6 sm:mb-10 text-32px text-black-100 font-semibold">Earning Chart</h1>
+        <div class="mb-10 flex items-center">
+            <span class="mr-6 md:text-24px text-black-70">Showing for :</span>
+            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.75 4.16536H17.7083V3.1237C17.7083 2.84743 17.5986 2.58248 17.4032 2.38713C17.2079 2.19178 16.9429 2.08203 16.6667 2.08203C16.3904 2.08203 16.1254 2.19178 15.9301 2.38713C15.7347 2.58248 15.625 2.84743 15.625 3.1237V4.16536H9.375V3.1237C9.375 2.84743 9.26525 2.58248 9.0699 2.38713C8.87455 2.19178 8.6096 2.08203 8.33333 2.08203C8.05707 2.08203 7.79211 2.19178 7.59676 2.38713C7.40141 2.58248 7.29167 2.84743 7.29167 3.1237V4.16536H6.25C5.4212 4.16536 4.62634 4.49461 4.04029 5.08066C3.45424 5.66671 3.125 6.46156 3.125 7.29037V19.7904C3.125 20.6192 3.45424 21.414 4.04029 22.0001C4.62634 22.5861 5.4212 22.9154 6.25 22.9154H18.75C19.5788 22.9154 20.3737 22.5861 20.9597 22.0001C21.5458 21.414 21.875 20.6192 21.875 19.7904V7.29037C21.875 6.46156 21.5458 5.66671 20.9597 5.08066C20.3737 4.49461 19.5788 4.16536 18.75 4.16536ZM6.25 6.2487H7.29167V7.29037C7.29167 7.56663 7.40141 7.83158 7.59676 8.02693C7.79211 8.22228 8.05707 8.33203 8.33333 8.33203C8.6096 8.33203 8.87455 8.22228 9.0699 8.02693C9.26525 7.83158 9.375 7.56663 9.375 7.29037V6.2487H15.625V7.29037C15.625 7.56663 15.7347 7.83158 15.9301 8.02693C16.1254 8.22228 16.3904 8.33203 16.6667 8.33203C16.9429 8.33203 17.2079 8.22228 17.4032 8.02693C17.5986 7.83158 17.7083 7.56663 17.7083 7.29037V6.2487H18.75C19.0263 6.2487 19.2912 6.35845 19.4866 6.5538C19.6819 6.74915 19.7917 7.0141 19.7917 7.29037V11.457H5.20833V7.29037C5.20833 7.0141 5.31808 6.74915 5.51343 6.5538C5.70878 6.35845 5.97373 6.2487 6.25 6.2487ZM18.75 20.832H6.25C5.97373 20.832 5.70878 20.7223 5.51343 20.5269C5.31808 20.3316 5.20833 20.0666 5.20833 19.7904V13.5404H19.7917V19.7904C19.7917 20.0666 19.6819 20.3316 19.4866 20.5269C19.2912 20.7223 19.0263 20.832 18.75 20.832Z" fill="#222222"/>
+                <path d="M8.33317 17.7083C8.90847 17.7083 9.37484 17.242 9.37484 16.6667C9.37484 16.0914 8.90847 15.625 8.33317 15.625C7.75787 15.625 7.2915 16.0914 7.2915 16.6667C7.2915 17.242 7.75787 17.7083 8.33317 17.7083Z" fill="#222222"/>
+                <path d="M16.6668 15.625H12.5002C12.2239 15.625 11.9589 15.7347 11.7636 15.9301C11.5682 16.1254 11.4585 16.3904 11.4585 16.6667C11.4585 16.9429 11.5682 17.2079 11.7636 17.4032C11.9589 17.5986 12.2239 17.7083 12.5002 17.7083H16.6668C16.9431 17.7083 17.208 17.5986 17.4034 17.4032C17.5987 17.2079 17.7085 16.9429 17.7085 16.6667C17.7085 16.3904 17.5987 16.1254 17.4034 15.9301C17.208 15.7347 16.9431 15.625 16.6668 15.625Z" fill="#222222"/>
+            </svg>
+            <span class="ml-4 font-semibold md:text-24px text-black-100">1 April - 20 April 2021</span>
+        </div>
+
+        <div class="mb-10">
+            <div id="chart"></div>
+        </div>
+
+        <h1 class="mb-2 sm:mb-4 text-32px text-black-100 font-semibold">Earning History</h1>
+        <!-- Table -->
+        <div class="overflow-x-auto bg-white relative">
+            <table class="table-auto w-full whitespace-nowrap relative">
+                <thead>
+                    <tr class="text-left">
+                        <th class="border-b-2 border-black-10 text-20px text-black-100 py-6 pr-4 font-semibold">
+                            No
+                        </th>
+                        <th class="border-b-2 border-black-10 text-20px text-black-100 py-6 pr-4 font-semibold">
+                            Date
+                        </th>
+                        <th class="border-b-2 border-black-10 text-20px text-black-100 py-6 pr-4 font-semibold">
+                            Service
+                        </th>
+                        <th class="border-b-2 border-black-10 text-20px text-black-100 py-6 pr-4 font-semibold">
+                            Earning
+                        </th>
+                        <th class="border-b-2 border-black-10 text-20px text-black-100 py-6 pr-4 font-semibold">
+                            Expected payout
+                        </th>
+                        <th class="border-b-2 border-black-10 text-20px text-black-100 py-6 pr-4 font-semibold">
+                            Status
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="border-b-2 border-black-10 text-20px text-black-70">
+                        <td class="py-4 pr-6">
+                            1.
+                        </td>
+                        <td class="py-4 pr-6">
+                            1 April 2021
+                        </td>
+                        <td class="py-4 pr-6">
+                            Character Set
+                        </td>
+                        <td class="py-4 pr-6">
+                            $100
+                        </td>
+                        <td class="py-4 pr-6">
+                            10 April 2021
+                        </td>
+                        <td class="py-4 pr-6">
+                            Pending
+                        </td>
+                    </tr>
+                    <tr class="border-b-2 border-black-10 text-20px text-black-70">
+                        <td class="py-4 pr-6">
+                            2.
+                        </td>
+                        <td class="py-4 pr-6">
+                            3 April 2021
+                        </td>
+                        <td class="py-4 pr-6">
+                            Character Set
+                        </td>
+                        <td class="py-4 pr-6">
+                            $100
+                        </td>
+                        <td class="py-4 pr-6">
+                            13 April 2021
+                        </td>
+                        <td class="py-4 pr-6">
+                            On Progress
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        var options = {
+            series: [
+                {
+                    name: 'Nama 1',
+                    data: [
+                        10,
+                        25,
+                        25,
+                        17,
+                        17,
+                        30,
+                        30,
+                        23,
+                        23
+                    ]
+                }, {
+                    name: 'Nama 2',
+                    data: [
+                        5,
+                        15,
+                        15,
+                        10,
+                        10,
+                        18,
+                        18,
+                        6,
+                        6
+                    ]
+                }
+            ],
+            chart: {
+                type: 'area',
+                height: 500,
+                toolbar: {
+                    show: false
+                },
+                stacked: true
+            },
+            colors: [
+                '#EA3AA1', '#D9BF3F'
+            ],
+            fill: {
+                colors: ['#D6FFF3']
+            },
+            stroke: {
+                curve: 'straight',
+                width: 2.5
+            },
+            dataLabels: {
+                enabled: false
+            },
+            legend: {
+                show: false
+            },
+            yaxis: {
+                labels: {
+                    align: 'left',
+                    style: {
+                        colors: '#8F9090',
+                        fontSize: '16px',
+                        fontFamily: 'Inter'
+                    },
+                    formatter: (value) => {
+                        return '$' + value * 1000
+                    }
+                }
+            },
+            xaxis: {
+                categories: [
+                    'Apr 01',
+                    'Apr 02',
+                    'Apr 03',
+                    'Apr 04',
+                    'Apr 05',
+                    'Apr 05',
+                    'Apr 07',
+                    'Apr 08',
+                    'Apr 09'
+                ],
+                labels: {
+                    style: {
+                        colors: '#8F9090',
+                        fontSize: '16px',
+                        fontFamily: 'Inter'
+                    },
+                    offsetY: 6
+                },
+                title: {
+                    offsetX: 30
+                }
+            },
+            markers: {
+                hover: {
+                    sizeOffset: 4
+                }
+            }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+    </script>
+{% endblock %}

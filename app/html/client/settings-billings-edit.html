@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#D9BF3F">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="author" content="#">
+    <title>Kanno - Client Settings Billings Edit</title>
+    <!-- CALL: ICON -->
+    <link rel="icon" href="../../assets/img/logo.png" type="image/gif" sizes="16x16">
+    <!-- CALL: SWIPER CSS -->
+    <link rel="stylesheet" href="../../assets/css/swiper-bundle.min.css">
+    <!-- CALL: TAILWIND -->
+    <link rel="stylesheet" href="../../assets/css/dist/tailwind.css">
+    <!-- CALL: USER DASHBOARD CSS -->
+    <link rel="stylesheet" href="../../assets/css/dist/settings.css">
+    <!-- CALL: GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav" class="nav-kanoo">
+        <div class="container-kanoo">
+            <div class="nav-kanoo-row">
+                <div class="nav-kanoo-col-left">
+                    <button id="nav-button" type="button" name="button-nav" class="text-black-100 p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-32px w-32px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-kanoo-col-center">
+                    <a href="#">
+                        <img class=" nav-kanoo-col-center-icon" src="../../assets/img/icon-kanoo-nav.png" alt="#">
+                    </a>
+                </div>
+                <div class="nav-kanoo-col-right">
+                    <a href="#" class="nav-kanoo-link-text">Dashboard</a>
+                    <a href="#" class="nav-kanoo-link-text">Projects</a>
+                    <button type="button" class="nav-kanoo-link-profile">
+                        <div>
+                            <img class="nav-kanoo-link-profile-image" src="../../assets/img/user.png" alt="#">
+                        </div>
+                        <div class="nav-kanoo-link-profile-name">
+                            <strong class="nav-kanoo-link-profile-name-text">Putri Rahma</strong>
+                        </div>
+                        <div class="nav-kanoo-link-profile-arrow">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.0002 15.5C11.8686 15.5008 11.7381 15.4755 11.6163 15.4258C11.4944 15.376 11.3836 15.3027 11.2902 15.21L7.29019 11.21C7.19695 11.1168 7.12299 11.0061 7.07253 10.8843C7.02207 10.7624 6.99609 10.6319 6.99609 10.5C6.99609 10.3681 7.02207 10.2376 7.07253 10.1158C7.12299 9.99393 7.19695 9.88324 7.29019 9.79C7.38342 9.69676 7.49411 9.6228 7.61594 9.57234C7.73776 9.52188 7.86833 9.49591 8.00019 9.49591C8.13204 9.49591 8.26261 9.52188 8.38444 9.57234C8.50626 9.6228 8.61695 9.69676 8.71019 9.79L12.0002 13.1L15.3002 9.92C15.3922 9.81771 15.5043 9.7355 15.6295 9.67852C15.7547 9.62153 15.8903 9.59099 16.0279 9.58881C16.1654 9.58664 16.302 9.61286 16.4289 9.66585C16.5559 9.71884 16.6705 9.79746 16.7657 9.89678C16.8609 9.99611 16.9346 10.114 16.9821 10.2431C17.0297 10.3722 17.0501 10.5097 17.042 10.647C17.034 10.7844 16.9977 10.9186 16.9355 11.0413C16.8732 11.1639 16.7863 11.2724 16.6802 11.36L12.6802 15.22C12.4973 15.3963 12.2542 15.4964 12.0002 15.5Z" fill="black"/>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV LEFT -->
+    <aside class="nav-left-kanoo">
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text">Dashboard</a>
+            <a href="#" class="nav-left-kanoo-link-text">Projects</a>
+        </div>
+        <div class="border-b border-black-10 my-24px"></div>
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text-login">Logout</a>
+        </div>
+    </aside>
+    <!-- COVER BODY: MODAL -->
+    <div class="kanoo-cover-body"></div>
+
+    <!-- Content block start here -->
+        
+   <!-- MAIN -->
+    <main id="main-settings">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-between">
+                <aside class="aside-settings">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
+                        <h3 class="aside-title">Settings</h3>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link">Account</a>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link">Security</a>
+                    </div>
+                    <div>
+                        <a href="./settings-billings" class="aside-link aside-link-active">Billings</a>
+                    </div>
+                </aside>
+                <div class="main-line"></div>
+                <section class="section-settings">
+                    <div class="mb-4px md:mb-8px">
+                        <h1 class="section-title">Billings Settings</h1>
+                    </div>
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
+                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
+                    </div>
+                    <form class="section-settings-container">
+                        <div class="mb-32px">
+                            <h5 class="section-subtitle">Edit Billing Method</h5>
+                        </div>
+                        <div class="mb-24px">
+                            <h6 class="section-subtitle-16px">Bank Account</h6>
+                        </div>
+                        <div class="mb-24px">
+                            <img src="../../assets/img/bank-bri.png" height="48" alt="#">
+                        </div>
+                        <div class="mb-24px">
+                            <input class="section-form-input w-full" type="text" value="3333 3333 3333" readonly>
+                        </div>
+                        <div class="mb-48px">
+                            <input class="section-form-input w-full" type="text" value="Agus Puyono">
+                        </div>
+                        <div class="flex items-center flex-wrap justify-end">
+                            <button class="section-button-link-remove-method mb-12px md:mb-0 order-3 md:order-1">Remove Method</button>
+                            <a href="./settings-billings" class="section-button-link-cancel md:ml-24px xl:ml-32px mb-12px md:mb-18px lg:mb-0 order-2 md:order-2">Cancel</a>
+                            <button class="section-button-link md:ml-24px xl:ml-32px mb-12px md:mb-0 order-1 md:order-3">Save Changes</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- COVER BODY: MODAL -->
+    <div class="kanoo-cover-body"></div>
+
+    <!-- Content block end here -->
+
+    <!-- FOOTER -->
+    <footer id="footer" class="footer-kanoo" style="background: rgba(231, 232, 233, 0.3) !important;">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo pt-68px">
+                <div class="footer-kanoo-col-primary">
+                    <h5 class="footer-kanoo-title">
+                        <img src="../../assets/img/icon-kanoo-footer.png" height="48" width="153" alt="#">
+                    </h5>
+                    <p class="footer-kanoo-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                        sed do eiusmod</p>
+                    <a href="#" class="footer-kanoo-link-selengkapnya">Baca selengkapnya</a>
+                </div>
+                <div class="footer-kanoo-col-secondary">
+                    <h5 class="footer-kanoo-title">Category</h5>
+                    <div>
+                        <a href="#" class="footer-kanoo-link">Graphic Design</a>
+                        <a href="#" class="footer-kanoo-link">UI/UX Design</a>
+                        <a href="#" class="footer-kanoo-link">Content Writing</a>
+                        <a href="#" class="footer-kanoo-link">Web Development</a>
+                    </div>
+                </div>
+                <div class="footer-kanoo-col-secondary">
+                    <h5 class="footer-kanoo-title">Social Media</h5>
+                    <div>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 3C5.239 3 3 5.239 3 8V16C3 18.761 5.239 21 8 21H16C18.761 21 21 18.761 21 16V8C21 5.239 18.761 3 16 3H8ZM18 5C18.552 5 19 5.448 19 6C19 6.552 18.552 7 18 7C17.448 7 17 6.552 17 6C17 5.448 17.448 5 18 5ZM12 7C14.761 7 17 9.239 17 12C17 14.761 14.761 17 12 17C9.239 17 7 14.761 7 12C7 9.239 9.239 7 12 7ZM12 9C11.2044 9 10.4413 9.31607 9.87868 9.87868C9.31607 10.4413 9 11.2044 9 12C9 12.7956 9.31607 13.5587 9.87868 14.1213C10.4413 14.6839 11.2044 15 12 15C12.7956 15 13.5587 14.6839 14.1213 14.1213C14.6839 13.5587 15 12.7956 15 12C15 11.2044 14.6839 10.4413 14.1213 9.87868C13.5587 9.31607 12.7956 9 12 9Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">Instagram</span>
+                        </a>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.6343 4.03182C20.8193 4.41682 19.4323 5.13882 18.7353 5.27682C18.7083 5.28382 18.6863 5.29282 18.6603 5.29982C17.8473 4.49782 16.7333 4.00082 15.5003 4.00082C13.0153 4.00082 11.0003 6.01582 11.0003 8.50082C11.0003 8.63182 10.9893 8.87282 11.0003 9.00082C7.78232 9.00082 5.43232 7.32182 3.67332 5.16382C3.43832 4.87382 3.18832 5.02482 3.13632 5.23082C3.01932 5.69682 2.97932 6.47582 2.97932 7.03182C2.97932 8.43282 4.07432 9.80882 5.77932 10.6618C5.46532 10.7428 5.11932 10.8008 4.75932 10.8008C4.33532 10.8008 3.84732 10.6898 3.42032 10.4658C3.26232 10.3828 2.92132 10.4058 3.02232 10.8098C3.42732 12.4288 5.27532 13.5658 6.92632 13.8968C6.55132 14.1178 5.75132 14.0728 5.38332 14.0728C5.24732 14.0728 4.77432 14.0408 4.46832 14.0028C4.18932 13.9688 3.76032 14.0408 4.11932 14.5848C4.89032 15.7518 6.63432 16.4848 8.13532 16.5128C6.75332 17.5968 4.49332 17.9928 2.32832 17.9928C1.89032 17.9828 1.91232 18.4818 2.26532 18.6668C3.86232 19.5048 6.47832 20.0008 8.34732 20.0008C15.7773 20.0008 20.0003 14.3378 20.0003 8.99982C20.0003 8.91382 19.9983 8.73382 19.9953 8.55282C19.9953 8.53482 20.0003 8.51782 20.0003 8.49982C20.0003 8.47282 19.9923 8.44682 19.9923 8.41982C19.9893 8.28382 19.9863 8.15682 19.9833 8.09082C20.5723 7.66582 21.4743 6.92782 21.9303 6.36282C22.0853 6.17082 21.9603 5.93782 21.7493 6.01082C21.2063 6.19982 20.2673 6.56582 19.6793 6.63582C20.8563 5.85682 21.4383 5.17882 21.9383 4.42582C22.1093 4.16882 21.8953 3.90782 21.6343 4.03182Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">Twitter</span>
+                        </a>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 3H7C4.791 3 3 4.791 3 7V17C3 19.209 4.791 21 7 21H12.621V14.039H10.278V11.314H12.621V9.309C12.621 6.985 14.042 5.718 16.116 5.718C16.815 5.716 17.513 5.752 18.208 5.823V8.253H16.78C15.65 8.253 15.43 8.787 15.43 9.575V11.31H18.13L17.779 14.035H15.414V21H17C19.209 21 21 19.209 21 17V7C21 4.791 19.209 3 17 3Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">Facebook</span>
+                        </a>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M21.582 6.186C21.352 5.326 20.674 4.648 19.814 4.418C18.254 4 12 4 12 4C12 4 5.746 4 4.186 4.418C3.326 4.648 2.648 5.326 2.418 6.186C2 7.746 2 12 2 12C2 12 2 16.254 2.418 17.814C2.648 18.674 3.326 19.352 4.186 19.582C5.746 20 12 20 12 20C12 20 18.254 20 19.814 19.582C20.675 19.352 21.352 18.674 21.582 17.814C22 16.254 22 12 22 12C22 12 22 7.746 21.582 6.186ZM10 14.598V9.402C10 9.017 10.417 8.777 10.75 8.969L15.25 11.567C15.583 11.759 15.583 12.241 15.25 12.433L10.75 15.031C10.417 15.224 10 14.983 10 14.598Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">Youtube</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-kanoo-col-secondary">
+                    <h5 class="footer-kanoo-title">Contact</h5>
+                    <div>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.0762 4.92767C16.9942 2.84467 14.1542 1.79367 11.1722 2.03367C7.16316 2.35567 3.64916 5.14367 2.47316 8.98967C1.63316 11.7377 1.98616 14.6067 3.35416 16.9767L2.05816 21.2797C1.93416 21.6927 2.31116 22.0817 2.72816 21.9707L7.23216 20.7637C8.69116 21.5597 10.3332 21.9787 12.0052 21.9797H12.0092C16.2042 21.9797 20.0802 19.4137 21.4212 15.4387C22.7272 11.5627 21.7612 7.61567 19.0762 4.92767ZM16.8972 15.5537C16.6892 16.1367 15.6702 16.6987 15.2122 16.7397C14.7542 16.7817 14.3252 16.9467 12.2172 16.1157C9.68016 15.1157 8.07816 12.5147 7.95416 12.3487C7.82916 12.1817 6.93516 10.9957 6.93516 9.76767C6.93516 8.53967 7.58016 7.93567 7.80916 7.68667C8.03816 7.43667 8.30816 7.37467 8.47516 7.37467C8.64116 7.37467 8.80816 7.37467 8.95316 7.38067C9.13116 7.38767 9.32816 7.39667 9.51516 7.81167C9.73716 8.30567 10.2222 9.53967 10.2842 9.66467C10.3462 9.78967 10.3882 9.93567 10.3052 10.1017C10.2222 10.2677 10.1802 10.3717 10.0562 10.5177C9.93116 10.6637 9.79416 10.8427 9.68216 10.9547C9.55716 11.0787 9.42716 11.2147 9.57216 11.4637C9.71816 11.7137 10.2182 12.5307 10.9602 13.1917C11.9142 14.0417 12.7172 14.3047 12.9672 14.4307C13.2172 14.5557 13.3622 14.5347 13.5082 14.3677C13.6542 14.2017 14.1322 13.6397 14.2982 13.3897C14.4642 13.1397 14.6312 13.1817 14.8602 13.2647C15.0892 13.3477 16.3162 13.9517 16.5652 14.0767C16.8152 14.2017 16.9812 14.2637 17.0432 14.3677C17.1052 14.4707 17.1052 14.9707 16.8972 15.5537Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">082198745</span>
+                        </a>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 4H4C2.895 4 2 4.895 2 6V18C2 19.105 2.895 20 4 20H20C21.105 20 22 19.105 22 18V6C22 4.895 21.105 4 20 4ZM19.601 8.249L12.53 12.669C12.206 12.872 11.794 12.872 11.47 12.669L4.399 8.249C4.151 8.094 4 7.822 4 7.53C4 6.864 4.733 6.458 5.297 6.811L12 11L18.703 6.811C19.267 6.458 20 6.864 20 7.53C20 7.822 19.849 8.094 19.601 8.249Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">Kanoo.id@gmail.com</span>
+                        </a>
+                        <a href="#" class="footer-kanoo-link">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.31992 1.91992C2.99512 1.91992 1.91992 2.99512 1.91992 4.31992V19.6799C1.91992 21.0047 2.99512 22.0799 4.31992 22.0799H19.6799C21.0047 22.0799 22.0799 21.0047 22.0799 19.6799V4.31992C22.0799 2.99512 21.0047 1.91992 19.6799 1.91992H4.31992ZM11.9999 5.27992C15.9695 5.27992 19.1999 7.85235 19.1999 11.0155C19.1999 12.2779 18.7004 13.4211 17.654 14.5443C16.9004 15.3987 15.677 16.3392 14.549 17.1168C13.421 17.8848 12.3839 18.4893 11.9999 18.6477C11.8463 18.7101 11.7311 18.7387 11.6399 18.7387C11.3231 18.7387 11.3515 18.4035 11.3755 18.2643C11.3947 18.1587 11.4815 17.6587 11.4815 17.6587C11.5055 17.4811 11.5291 17.1988 11.4571 17.0212C11.3755 16.8244 11.0539 16.7232 10.8187 16.6752C7.36267 16.224 4.79992 13.8475 4.79992 11.0155C4.79992 7.85235 8.03032 5.27992 11.9999 5.27992ZM11.5162 9.11898C11.2743 9.12347 11.0399 9.30802 11.0399 9.59992V12.4799C11.0399 12.7449 11.255 12.9599 11.5199 12.9599C11.7849 12.9599 11.9999 12.7449 11.9999 12.4799V11.098L13.049 12.7584C13.3207 13.1385 13.9199 12.947 13.9199 12.4799V9.59992C13.9199 9.33496 13.7049 9.11992 13.4399 9.11992C13.175 9.11992 12.9599 9.33496 12.9599 9.59992V11.0399L11.9109 9.32148C11.809 9.17892 11.6613 9.11629 11.5162 9.11898ZM7.19992 9.11992C6.93496 9.11992 6.71992 9.33496 6.71992 9.59992V12.4799C6.71992 12.7449 6.93496 12.9599 7.19992 12.9599H8.63992C8.90488 12.9599 9.11992 12.7449 9.11992 12.4799C9.11992 12.215 8.90488 11.9999 8.63992 11.9999H7.67992V9.59992C7.67992 9.33496 7.46488 9.11992 7.19992 9.11992ZM10.0799 9.11992C9.81496 9.11992 9.59992 9.33496 9.59992 9.59992V12.4799C9.59992 12.7449 9.81496 12.9599 10.0799 12.9599C10.3449 12.9599 10.5599 12.7449 10.5599 12.4799V9.59992C10.5599 9.33496 10.3449 9.11992 10.0799 9.11992ZM14.8799 9.11992C14.615 9.11992 14.3999 9.33496 14.3999 9.59992V12.4799C14.3999 12.7449 14.615 12.9599 14.8799 12.9599H16.3199C16.5849 12.9599 16.7999 12.7449 16.7999 12.4799C16.7999 12.215 16.5849 11.9999 16.3199 11.9999H15.3599V11.5199H16.3199C16.5854 11.5199 16.7999 11.3049 16.7999 11.0399C16.7999 10.775 16.5854 10.5599 16.3199 10.5599H15.3599V10.0799H16.3199C16.5849 10.0799 16.7999 9.86488 16.7999 9.59992C16.7999 9.33496 16.5849 9.11992 16.3199 9.11992H14.8799Z" fill="#BBBCBD"/>
+                            </svg>
+                            <span class="ml-3">@kanoo.id</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row-flex-kanoo">
+                <div class="w-full text-center md:text-right pb-58px mt-80px">
+                    <h6 class="footer-kanoo-copyright">Kanno id 2021</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- CALL: jQUERY -->
+    <script src="../../assets/js/jquery-3.5.1.min.js"></script>
+    <!-- CALL: DASHBOARD JS -->
+    <script src="../../assets/js/settings.js"></script>
+</body>
+</html>

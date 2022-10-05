@@ -1,0 +1,79 @@
+{% set title = 'Create Service' %}
+{% set style = 'create-service' %}
+{% set script = 'create-service' %}
+{% extends 'user-dashboard.njk' %}
+
+{% block content %}
+    <!-- step nav -->
+    <div class="relative">
+        <div class="mb-14 bg-kuning-100 text-kuning-30">
+            <ul class="container-kanoo h-80px flex items-center justify-center">
+                <li class="step-nav flex items-center space-x-4">
+                    <a href="#" class="md:text-24px font-semibold">Overview</a>
+                </li>
+                <li class="step-nav text-white flex items-center space-x-4">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#FDFEFF"/>
+                        <path d="M20 10C16.134 10 13 13.134 13 17C13 20.966 17.404 26.82 19.226 29.071C19.626 29.565 20.374 29.565 20.774 29.071C22.596 26.82 27 20.966 27 17C27 13.134 23.866 10 20 10ZM20 19.5C18.619 19.5 17.5 18.381 17.5 17C17.5 15.619 18.619 14.5 20 14.5C21.381 14.5 22.5 15.619 22.5 17C22.5 18.381 21.381 19.5 20 19.5Z" fill="#D9BF3F"/>
+                    </svg>
+                    <a href="#" class="md:text-24px font-semibold">Pricing Option</a>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <a href="#" class="md:text-24px font-semibold">Publish</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container-kanoo lg:px-56">
+        <div class="mb-14 flex items-center justify-between space-x-3">
+            <div>
+                <h1 class="font-bold text-2xl sm:text-40px mb-2">Pricing Options</h1>
+                <p class="text-black-100 text-sm md:text-16px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+            </div>
+            <div class="flex items-center space-x-4">
+                <div class="relative flex items-center select-none transition duration-200 ease-in">
+                    <input onclick="toggleTab()" type="checkbox" name="toggle" id="toggle" class="toggle-checkbox absolute mx-1 block w-5 h-5 rounded-full bg-black-30 appearance-none cursor-pointer"/>
+                    <label for="toggle" class="toggle-label block overflow-hidden w-14 h-7 rounded-full bg-white border border-black-30 cursor-pointer"></label>
+                </div>
+                <label for="toggle" class="text-xs md:text-16px">Use 3 Pricings</label>
+            </div>
+        </div>
+
+        <ul class="grid grid-cols-3 text-center">
+            <li onclick="openTab(event, 'standard')" class="tab active py-6 tab-disable font-semibold">Standard</li>
+            <li onclick="openTab(event, 'premium')" class="tab py-6 tab-disable font-semibold">Premium</li>
+            <li onclick="openTab(event, 'advance')" class="tab py-6 tab-disable font-semibold">Advance</li>
+        </ul>
+        <div class="mb-14 border border-black-10 py-8 px-6">
+            <div id="standard" class="tab-content">
+                <div class="mb-6">
+                    <input type="text" class="py-3.5 px-4 rounded-4px text-16px border border-black-30 w-full" placeholder="Service Name">
+                </div>
+                <div class="mb-6">
+                    <textarea placeholder="Description" class="h-40 py-3.5 px-4 border border-black-30 rounded-4px w-full"></textarea>
+                </div>
+                <div class="relative">
+                    <svg class="absolute top-4 left-4" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 11H13V5C13 4.73478 12.8946 4.48043 12.7071 4.29289C12.5196 4.10536 12.2652 4 12 4C11.7348 4 11.4804 4.10536 11.2929 4.29289C11.1054 4.48043 11 4.73478 11 5V11H5C4.73478 11 4.48043 11.1054 4.29289 11.2929C4.10536 11.4804 4 11.7348 4 12C4 12.2652 4.10536 12.5196 4.29289 12.7071C4.48043 12.8946 4.73478 13 5 13H11V19C11 19.2652 11.1054 19.5196 11.2929 19.7071C11.4804 19.8946 11.7348 20 12 20C12.2652 20 12.5196 19.8946 12.7071 19.7071C12.8946 19.5196 13 19.2652 13 19V13H19C19.2652 13 19.5196 12.8946 19.7071 12.7071C19.8946 12.5196 20 12.2652 20 12C20 11.7348 19.8946 11.4804 19.7071 11.2929C19.5196 11.1054 19.2652 11 19 11Z" fill="#8F9090"/>
+                    </svg>
+                    <input type="text" class="py-3.5 pl-14 pr-4 rounded-4px text-16px border border-black-30 w-full" placeholder="Price">
+                </div>
+            </div>
+            <div id="premium" class="tab-content hidden">
+                premium
+            </div>
+            <div id="advance" class="tab-content hidden">
+                advance
+            </div>
+        </div>
+        <div class="mb-44 flex items-center justify-between">
+            <button class="border border-meja-100 text-meja-100 h-52px w-28 sm:w-48 rounded-4px text-20px font-semibold">
+                Back
+            </button>
+            <button class="bg-meja-100 text-white h-52px w-28 sm:w-48 rounded-4px text-20px font-semibold">
+                Next
+            </button>
+        </div>
+    </div>
+{% endblock %}

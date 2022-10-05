@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <meta name="author" content="#">
+     <title>{{title}}</title>
+    <!-- CALL: ICON -->
+    <link rel="icon" href="../assets/img/logo.png" type="image/gif" sizes="16x16">
+    <!-- CALL: SWIPER CSS -->
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css">
+    <!-- CALL: TAILWIND -->
+    <link rel="stylesheet" href="../assets/css/dist/tailwind.css">
+    <!-- CALL: HOMECSS -->
+    <link rel="stylesheet" href="../assets/css/dist/{{style}}.css">
+    <!-- CALL: GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <!-- NAV -->
+    <nav id="nav" class="nav-kanoo">
+        <div class="container-kanoo">
+            <div class="nav-kanoo-row">
+                <div class="nav-kanoo-col-left">
+                    <button id="nav-button" type="button" name="button-nav" class="text-black-100 p-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-32px w-32px" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="nav-kanoo-col-center">
+                    <a href="#">
+                        <img class="nav-kanoo-col-center-icon" src="../assets/img/icon-kanoo-nav.png" alt="#">
+                    </a>
+                </div>
+                <div class="nav-kanoo-col-right">
+                    <a href="#" class="nav-kanoo-link-text">Company</a>
+                    <a href="#" class="nav-kanoo-link-text">Service</a>
+                    <a href="#" class="nav-kanoo-link-text">Testimoni</a>
+                    <a href="#" class="nav-kanoo-link-text">Blog</a>
+                    <a href="#" class="nav-kanoo-link-text">Bantuan</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- NAV LEFT -->
+    <aside class="nav-left-kanoo">
+        <div class="w-full">
+            <a href="#" class="nav-left-kanoo-link-text">Company</a>
+            <a href="#" class="nav-left-kanoo-link-text">Service</a>
+            <a href="#" class="nav-left-kanoo-link-text">Testimoni</a>
+            <a href="#" class="nav-left-kanoo-link-text">Blog</a>
+            <a href="#" class="nav-left-kanoo-link-text">Bantuan</a>
+        </div>
+        <div class="border-b border-black-10 my-24px"></div>
+    </aside>
+    <!-- COVER BODY: MODAL -->
+    <div class="kanoo-cover-body"></div>
+
+    <!-- Content block start here -->
+        {% block content %}{% endblock %}
+    <!-- Content block end here -->
+
+    <!-- CALL: jQUERY -->
+    <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    <!-- TEST: JAVASCRIPT -->
+    <script>
+        function openLeftNav() {
+            $('.kanoo-cover-body').addClass('kanoo-cover-body-acitve');
+            $('.nav-left-kanoo').css({'transform': 'translateX(0%)'});
+        }
+        function closeLeftNav() {
+            $('.kanoo-cover-body').removeClass('kanoo-cover-body-acitve');
+            $('.nav-left-kanoo').css({'transform': 'translateX(-100%)'});
+        }
+        $('#nav-button').on('click', function() {
+            openLeftNav();
+        });
+        $('.kanoo-cover-body').on('click', function() {
+            closeLeftNav();
+        });
+    </script>
+    {% block script %}{% endblock %}
+</body>
+</html>

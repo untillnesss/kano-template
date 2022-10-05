@@ -1,0 +1,20 @@
+/* CHECKBOX TOGGLE SWITCH */
+.toggle-checkbox:checked {
+    right: 0;
+    background-color: #EA3AA1; 
+}   
+/* TAB MENU */
+.tab-enable {
+    background: #F9F8EC;
+    color: #D9BF3F;
+    cursor: pointer;
+}
+.tab-disable {
+    background: #E7E8E9;
+    color: #8F9090;
+    pointer-events: none;
+}
+.active {
+    background: #d9bf3f;
+    color: #ffffff;
+}

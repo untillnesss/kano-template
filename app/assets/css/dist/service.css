@@ -1,0 +1,10 @@
+ /* CHECKBOX TOGGLE SWITCH */
+ /* @apply rules for documentation, these do not work as inline style */
+ .toggle-checkbox:checked {
+     right: 0;
+     background-color: #FF8845;
+ }
+ .show {
+    display: block;
+    z-index: 9999;
+}

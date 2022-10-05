@@ -1,0 +1,19 @@
+.img-header {
+    height: 463px;
+}
+
+@media only screen and (max-width: 768px) {
+    .img-header {
+        height: 280px;
+    }
+}
+
+#cat::after {
+    content: "";
+    width: 7px;
+    height: 7px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px 16px;
+}

@@ -1,0 +1,120 @@
+{% set title = 'Blog' %}
+{% extends 'landing-page.njk' %}
+{% set style = 'blog' %}
+
+{% block content %}
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo">
+                <div class="w-full md:w-1/2 py-16 md:py-14">
+                    <div class="mb-4">
+                        <p class="bg-white bg-opacity-30 text-white text-center rounded-16px py-2 w-36">Kategori Blog</p>
+                    </div>
+                    <div class="mb-6">
+                        <h1 class="text-white font-bold text-40px">Proses Kinerja Tim Product Development di Startup</h1>
+                    </div>
+                    <p class="text-20px text-white">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt sed do elusmod tempor.
+                    </p>
+                </div>
+                <div class="hidden md:block w-full md:w-1/2">
+                    <img class="header-category-image" src="../assets/img/blog-header.png" alt="Blog Header">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container-kanoo my-20">
+        <div class="lg:flex lg:space-x-10">
+            <!-- judul blog -->
+            <div class="self-start grid lg:grid-cols-2 gap-10 lg:w-8/12">
+                <!-- card blog -->
+                <div class="shadow-blog-card bg-white px-5 py-6 rounded-8px">
+                    <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
+                    <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://placekitten.com/100/100" class="w-56px h-56px rounded-full">
+                        <div class="text-14px text-black-50">
+                            Dibuat oleh <span class="font-semibold text-black-100">Author</span> pada hari ini
+                            <p class="font-semibold text-black-100">17:58</p>
+                        </div>
+                    </div>
+                    <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
+                </div>
+                <div class="shadow-blog-card bg-white px-5 py-6 rounded-8px">
+                    <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
+                    <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://placekitten.com/100/100" class="w-56px h-56px rounded-full">
+                        <div class="text-14px text-black-50">
+                            Dibuat oleh <span class="font-semibold text-black-100">Author</span> pada hari ini
+                            <p class="font-semibold text-black-100">17:58</p>
+                        </div>
+                    </div>
+                    <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
+                </div>
+                <div class="shadow-blog-card bg-white px-5 py-6 rounded-8px">
+                    <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
+                    <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://placekitten.com/100/100" class="w-56px h-56px rounded-full">
+                        <div class="text-14px text-black-50">
+                            Dibuat oleh <span class="font-semibold text-black-100">Author</span> pada hari ini
+                            <p class="font-semibold text-black-100">17:58</p>
+                        </div>
+                    </div>
+                    <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
+                </div>
+                <div class="shadow-blog-card bg-white px-5 py-6 rounded-8px">
+                    <img src="https://placekitten.com/320/230" class="rounded-lg mb-4 w-full">
+                    <h1 class="font-semibold text-24px text-black-100 mb-4">Judul Blog</h1>
+                    <div class="flex items-center space-x-4 mb-4">
+                        <img src="https://placekitten.com/100/100" class="w-56px h-56px rounded-full">
+                        <div class="text-14px text-black-50">
+                            Dibuat oleh <span class="font-semibold text-black-100">Author</span> pada hari ini
+                            <p class="font-semibold text-black-100">17:58</p>
+                        </div>
+                    </div>
+                    <p class="text-16px text-black-70 leading-28px">Lorem ipsum dolor sit amet, consectetur adipiscing elit, Curabitur Vestibulum blandit viverra. suspendisse ante Ex.</p>
+                </div>
+            </div>
+            <div class="lg:w-4/12 mt-16 lg:mt-0">
+                <!-- subscribe -->
+                <div class="self-start bg-black-10 rounded-16px text-center py-10 mb-10">
+                    <h1 class="text-24px text-black-100 font-bold mb-5 px-24">Subscribe ke Mailing List Kami.</h1>
+                    <form action="#" class="px-10">
+                        <input type="email" placeholder="Masukkan email" name="email" id="email" class="rounded-4px p-3 w-full">
+                        <br><br>
+                        <button type="submit" class="bg-meja-100 font-semibold text-white px-10 py-3 rounded-md">Berlangganan</button>
+                    </form>
+                </div>
+                <!-- judul -->
+                <div class="flex items-center space-x-6 mb-6">
+                    <div class="w-5/12">
+                        <img src="https://placekitten.com/200/150" class="rounded-8px w-full" style="max-width: 200px;">
+                    </div>
+                    <div class="w-7/12">
+                        <h1 class="font-bold text-20px pb-2">Judul Blog</h1>
+                        <div class="text-black-50 text-16px flex items-center">
+                            <span id="cat">Kategori</span>
+                            <span>29 Apr 2021</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-6 mb-6">
+                    <div class="w-5/12">
+                        <img src="https://placekitten.com/200/150" class="rounded-8px w-full" style="max-width: 200px;">
+                    </div>
+                    <div class="w-7/12">
+                        <h1 class="font-bold text-20px pb-2">Judul Blog</h1>
+                        <div class="text-black-50 text-216x flex items-center">
+                            <span id="cat">Kategori</span>
+                            <span>29 Apr 2021</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,80 @@
+{% set title = 'Create Service' %}
+{% set style = 'create-service' %}
+{% extends 'user-dashboard.njk' %}
+
+{% block content %}
+    <!-- step nav -->
+    <div class="relative">
+        <div class="mb-14 bg-kuning-100 text-kuning-30">
+            <ul class="container-kanoo h-80px flex items-center justify-center">
+                <li class="step-nav text-white flex items-center space-x-4">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="40" height="40" rx="20" fill="#FDFEFF"/>
+                        <path d="M20 10C16.134 10 13 13.134 13 17C13 20.966 17.404 26.82 19.226 29.071C19.626 29.565 20.374 29.565 20.774 29.071C22.596 26.82 27 20.966 27 17C27 13.134 23.866 10 20 10ZM20 19.5C18.619 19.5 17.5 18.381 17.5 17C17.5 15.619 18.619 14.5 20 14.5C21.381 14.5 22.5 15.619 22.5 17C22.5 18.381 21.381 19.5 20 19.5Z" fill="#D9BF3F"/>
+                    </svg>
+                    <a href="#" class="md:text-24px font-semibold">Overview</a>
+                </li>
+                <li class="step-nav flex items-center space-x-4">
+                    <a href="#" class="md:text-24px font-semibold">Pricing Option</a>
+                </li>
+                <li class="flex items-center space-x-4">
+                    <a href="#" class="md:text-24px font-semibold">Publish</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container-kanoo lg:px-56">
+        <div class="mb-14">
+            <h1 class="font-bold text-2xl sm:text-40px mb-2">Create New Service</h1>
+            <p class="text-16px text-black-100">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p>
+        </div>
+        <div class="mb-12 border border-black-30 text-black-100 p-6">
+            <form action="">
+                <div class="mb-6">
+                    <input type="text" class="py-3.5 px-4 rounded-4px text-16px border border-black-30 w-full" placeholder="Title">
+                </div>
+                <div class="mb-6 relative">
+                    <svg class="absolute top-4 right-5" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12.0002 15.5002C11.8686 15.5009 11.7381 15.4757 11.6163 15.426C11.4944 15.3762 11.3836 15.3029 11.2902 15.2102L7.29019 11.2102C7.19695 11.1169 7.12299 11.0063 7.07253 10.8844C7.02207 10.7626 6.99609 10.632 6.99609 10.5002C6.99609 10.3683 7.02207 10.2378 7.07253 10.1159C7.12299 9.99411 7.19695 9.88342 7.29019 9.79018C7.38342 9.69695 7.49411 9.62299 7.61594 9.57253C7.73776 9.52206 7.86833 9.49609 8.00019 9.49609C8.13204 9.49609 8.26261 9.52206 8.38444 9.57253C8.50626 9.62299 8.61695 9.69695 8.71019 9.79018L12.0002 13.1002L15.3002 9.92019C15.3922 9.8179 15.5043 9.73569 15.6295 9.6787C15.7547 9.62171 15.8903 9.59118 16.0279 9.589C16.1654 9.58682 16.302 9.61304 16.4289 9.66603C16.5559 9.71903 16.6705 9.79764 16.7657 9.89697C16.8609 9.99629 16.9346 10.1142 16.9821 10.2433C17.0297 10.3724 17.0501 10.5099 17.042 10.6472C17.034 10.7846 16.9977 10.9188 16.9355 11.0414C16.8732 11.1641 16.7863 11.2726 16.6802 11.3602L12.6802 15.2202C12.4973 15.3965 12.2542 15.4966 12.0002 15.5002Z" fill="#222222"/>
+                    </svg>
+                    <select class="w-full appearance-none text-16px text-black-50 bg-white-90 border border-black-30 rounded-4px h-56px pl-4 pr-10">
+                        <option selected disabled>Select Category</option>
+                        <option>UI/UX Design</option>
+                    </select>
+                </div>
+                <div class="mb-6">
+                    <textarea placeholder="Type description of the service" class="border rounded-4px border-black-30 h-40 p-4 w-full"></textarea>
+                </div>
+                <div class="grid">
+                    <div class="hidden relative" id="hiddenImg">
+                        <img id="preview">
+                        <svg class="absolute right-4 top-4 cursor-pointer" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect opacity="0.6" width="40" height="40" rx="10" fill="#222222"/>
+                            <path d="M29 14.0014H24V12.3314C23.9765 11.6912 23.7002 11.0864 23.2316 10.6497C22.7629 10.2129 22.1402 9.97977 21.5 10.0014H18.5C17.8598 9.97977 17.2371 10.2129 16.7684 10.6497C16.2998 11.0864 16.0235 11.6912 16 12.3314V14.0014H11C10.7348 14.0014 10.4804 14.1067 10.2929 14.2943C10.1054 14.4818 10 14.7362 10 15.0014C10 15.2666 10.1054 15.5209 10.2929 15.7085C10.4804 15.896 10.7348 16.0014 11 16.0014H12V27.0014C12 27.797 12.3161 28.5601 12.8787 29.1227C13.4413 29.6853 14.2044 30.0014 15 30.0014H25C25.7956 30.0014 26.5587 29.6853 27.1213 29.1227C27.6839 28.5601 28 27.797 28 27.0014V16.0014H29C29.2652 16.0014 29.5196 15.896 29.7071 15.7085C29.8946 15.5209 30 15.2666 30 15.0014C30 14.7362 29.8946 14.4818 29.7071 14.2943C29.5196 14.1067 29.2652 14.0014 29 14.0014ZM18 12.3314C18 12.1714 18.21 12.0014 18.5 12.0014H21.5C21.79 12.0014 22 12.1714 22 12.3314V14.0014H18V12.3314ZM26 27.0014C26 27.2666 25.8946 27.521 25.7071 27.7085C25.5196 27.896 25.2652 28.0014 25 28.0014H15C14.7348 28.0014 14.4804 27.896 14.2929 27.7085C14.1054 27.521 14 27.2666 14 27.0014V16.0014H26V27.0014Z" fill="#FDFEFF"/>
+                            <path d="M17 25C17.2652 25 17.5196 24.8946 17.7071 24.7071C17.8946 24.5196 18 24.2652 18 24V20C18 19.7348 17.8946 19.4804 17.7071 19.2929C17.5196 19.1054 17.2652 19 17 19C16.7348 19 16.4804 19.1054 16.2929 19.2929C16.1054 19.4804 16 19.7348 16 20V24C16 24.2652 16.1054 24.5196 16.2929 24.7071C16.4804 24.8946 16.7348 25 17 25Z" fill="#FDFEFF"/>
+                            <path d="M23 25C23.2652 25 23.5196 24.8946 23.7071 24.7071C23.8946 24.5196 24 24.2652 24 24V20C24 19.7348 23.8946 19.4804 23.7071 19.2929C23.5196 19.1054 23.2652 19 23 19C22.7348 19 22.4804 19.1054 22.2929 19.2929C22.1054 19.4804 22 19.7348 22 20V24C22 24.2652 22.1054 24.5196 22.2929 24.7071C22.4804 24.8946 22.7348 25 23 25Z" fill="#FDFEFF"/>
+                        </svg>
+                    </div>
+                    <div class="relative flex flex-col items-center justify-center border h-64 border-black-30">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 19C23 19.5304 22.7893 20.0391 22.4142 20.4142C22.0391 20.7893 21.5304 21 21 21H3C2.46957 21 1.96086 20.7893 1.58579 20.4142C1.21071 20.0391 1 19.5304 1 19V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H7L9 3H15L17 6H21C21.5304 6 22.0391 6.21071 22.4142 6.58579C22.7893 6.96086 23 7.46957 23 8V19Z" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 17C14.2091 17 16 15.2091 16 13C16 10.7909 14.2091 9 12 9C9.79086 9 8 10.7909 8 13C8 15.2091 9.79086 17 12 17Z" stroke="#222222" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Select or drop picture here</span>
+                        <input class="absolute h-full w-full opacity-0" type="file" onchange="dragNdrop(event)" ondragover="drag()" ondrop="drop()">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="mb-44 flex items-center justify-between">
+            <button class="border border-meja-100 text-meja-100 h-52px w-28 sm:w-48 rounded-4px text-20px font-semibold">
+                Back
+            </button>
+            <button class="bg-meja-100 text-white h-52px w-28 sm:w-48 rounded-4px text-20px font-semibold">
+                Next
+            </button>
+        </div>
+    </div>
+
+{% endblock %}

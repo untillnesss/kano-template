@@ -1,0 +1,105 @@
+<!-- Nama pages-->
+{% set title = 'FAQ' %}
+{% set style = 'faq' %}
+{% extends "landing-page.njk" %}
+{% block content %}
+        <!-- COVER BODY: MODAL -->
+        <div class="kanoo-cover-body"></div>
+        <div class="relative">
+            <!-- HEADER -->
+            <header class="bg-kuning-100 py-20 mb-14">
+                <div class="container-kanoo flex flex-col items-center">
+                    <h1 class="font-bold text-white text-3xl sm:text-40px mb-10">Halaman Bantuan</h1>
+                    <div class="flex relative">
+                        <svg class="absolute top-5 left-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7 0C3.14585 0 0 3.14585 0 7C0 10.8541 3.14585 14 7 14C8.748 14 10.345 13.348 11.5742 12.2812L12 12.707V14L17.5859 19.5859C18.1379 20.1379 19.0339 20.1379 19.5859 19.5859C20.1379 19.0339 20.1379 18.1379 19.5859 17.5859L14 12H12.707L12.2812 11.5742C13.348 10.345 14 8.748 14 7C14 3.14585 10.8541 0 7 0ZM7 2C9.77327 2 12 4.22673 12 7C12 9.77327 9.77327 12 7 12C4.22673 12 2 9.77327 2 7C2 4.22673 4.22673 2 7 2Z" fill="#BBBCBD"/>
+                        </svg>
+                        <input type="text" class="h-56px pl-12 pr-5 sm:text-20px rounded-l-4px w-60 sm:w-full" placeholder="Ketikkan kata kunci masalah">
+                        <button class="bg-meja-100 font-semibold text-white text-20px h-56px px-4 sm:px-9 rounded-r-4px">Cari</button>
+                    </div>
+                </div>
+            </header>
+            <div class="container-kanoo">
+                <!-- CATEGORY -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-7">
+                    <!-- CARD -->
+                    <div class="bg-white px-6 md:px-24 py-6 md:py-11 flex flex-col items-center justify-center">
+                        <div class="bg-meja-10 rounded-full w-10 h-10 md:w-16 md:h-16 grid place-items-center mb-2 md:mb-5">
+                            <svg class="h-6 md:h-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.9997 18.3333C21.3182 18.3333 22.6071 17.9423 23.7035 17.2098C24.7998 16.4773 25.6543 15.4361 26.1589 14.2179C26.6635 12.9997 26.7955 11.6593 26.5382 10.3661C26.281 9.07286 25.6461 7.88497 24.7137 6.95262C23.7814 6.02027 22.5935 5.38534 21.3003 5.1281C20.0071 4.87087 18.6666 5.00289 17.4485 5.50747C16.2303 6.01206 15.1891 6.86654 14.4565 7.96287C13.724 9.0592 13.333 10.3481 13.333 11.6667C13.333 13.4348 14.0354 15.1305 15.2856 16.3807C16.5359 17.631 18.2316 18.3333 19.9997 18.3333ZM19.9997 8.33334C20.6589 8.33334 21.3034 8.52883 21.8516 8.8951C22.3997 9.26138 22.827 9.78197 23.0793 10.3911C23.3316 11.0001 23.3976 11.6704 23.269 12.317C23.1403 12.9636 22.8229 13.5575 22.3567 14.0237C21.8905 14.4899 21.2966 14.8073 20.65 14.936C20.0034 15.0646 19.3332 14.9986 18.7241 14.7463C18.115 14.494 17.5944 14.0667 17.2281 13.5186C16.8618 12.9704 16.6663 12.3259 16.6663 11.6667C16.6663 10.7826 17.0175 9.93477 17.6427 9.30965C18.2678 8.68453 19.1156 8.33334 19.9997 8.33334Z" fill="#ea3aa1"/>
+                                <path d="M19.9997 21.668C16.9055 21.668 13.938 22.8971 11.7501 25.0851C9.56217 27.273 8.33301 30.2404 8.33301 33.3346C8.33301 33.7767 8.5086 34.2006 8.82116 34.5131C9.13372 34.8257 9.55765 35.0013 9.99967 35.0013C10.4417 35.0013 10.8656 34.8257 11.1782 34.5131C11.4907 34.2006 11.6663 33.7767 11.6663 33.3346C11.6663 31.1245 12.5443 29.0049 14.1071 27.4421C15.6699 25.8793 17.7895 25.0013 19.9997 25.0013C22.2098 25.0013 24.3294 25.8793 25.8922 27.4421C27.455 29.0049 28.333 31.1245 28.333 33.3346C28.333 33.7767 28.5086 34.2006 28.8212 34.5131C29.1337 34.8257 29.5576 35.0013 29.9997 35.0013C30.4417 35.0013 30.8656 34.8257 31.1782 34.5131C31.4908 34.2006 31.6663 33.7767 31.6663 33.3346C31.6663 30.2404 30.4372 27.273 28.2493 25.0851C26.0613 22.8971 23.0939 21.668 19.9997 21.668Z" fill="#ea3aa1"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="text-meja-100 font-semibold md:text-24px">Category</a>
+                    </div>
+                    <div class="bg-white px-6 md:px-24 py-6 md:py-11 flex flex-col items-center justify-center">
+                        <div class="bg-meja-10 rounded-full w-10 h-10 md:w-16 md:h-16 grid place-items-center mb-2 md:mb-5">
+                            <svg class="h-6 md:h-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.9997 18.3333C21.3182 18.3333 22.6071 17.9423 23.7035 17.2098C24.7998 16.4773 25.6543 15.4361 26.1589 14.2179C26.6635 12.9997 26.7955 11.6593 26.5382 10.3661C26.281 9.07286 25.6461 7.88497 24.7137 6.95262C23.7814 6.02027 22.5935 5.38534 21.3003 5.1281C20.0071 4.87087 18.6666 5.00289 17.4485 5.50747C16.2303 6.01206 15.1891 6.86654 14.4565 7.96287C13.724 9.0592 13.333 10.3481 13.333 11.6667C13.333 13.4348 14.0354 15.1305 15.2856 16.3807C16.5359 17.631 18.2316 18.3333 19.9997 18.3333ZM19.9997 8.33334C20.6589 8.33334 21.3034 8.52883 21.8516 8.8951C22.3997 9.26138 22.827 9.78197 23.0793 10.3911C23.3316 11.0001 23.3976 11.6704 23.269 12.317C23.1403 12.9636 22.8229 13.5575 22.3567 14.0237C21.8905 14.4899 21.2966 14.8073 20.65 14.936C20.0034 15.0646 19.3332 14.9986 18.7241 14.7463C18.115 14.494 17.5944 14.0667 17.2281 13.5186C16.8618 12.9704 16.6663 12.3259 16.6663 11.6667C16.6663 10.7826 17.0175 9.93477 17.6427 9.30965C18.2678 8.68453 19.1156 8.33334 19.9997 8.33334Z" fill="#ea3aa1"/>
+                                <path d="M19.9997 21.668C16.9055 21.668 13.938 22.8971 11.7501 25.0851C9.56217 27.273 8.33301 30.2404 8.33301 33.3346C8.33301 33.7767 8.5086 34.2006 8.82116 34.5131C9.13372 34.8257 9.55765 35.0013 9.99967 35.0013C10.4417 35.0013 10.8656 34.8257 11.1782 34.5131C11.4907 34.2006 11.6663 33.7767 11.6663 33.3346C11.6663 31.1245 12.5443 29.0049 14.1071 27.4421C15.6699 25.8793 17.7895 25.0013 19.9997 25.0013C22.2098 25.0013 24.3294 25.8793 25.8922 27.4421C27.455 29.0049 28.333 31.1245 28.333 33.3346C28.333 33.7767 28.5086 34.2006 28.8212 34.5131C29.1337 34.8257 29.5576 35.0013 29.9997 35.0013C30.4417 35.0013 30.8656 34.8257 31.1782 34.5131C31.4908 34.2006 31.6663 33.7767 31.6663 33.3346C31.6663 30.2404 30.4372 27.273 28.2493 25.0851C26.0613 22.8971 23.0939 21.668 19.9997 21.668Z" fill="#ea3aa1"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="text-meja-100 font-semibold md:text-24px">Category</a>
+                    </div>
+                    <div class="bg-white px-6 md:px-24 py-6 md:py-11 flex flex-col items-center justify-center">
+                        <div class="bg-meja-10 rounded-full w-10 h-10 md:w-16 md:h-16 grid place-items-center mb-2 md:mb-5">
+                            <svg class="h-6 md:h-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.9997 18.3333C21.3182 18.3333 22.6071 17.9423 23.7035 17.2098C24.7998 16.4773 25.6543 15.4361 26.1589 14.2179C26.6635 12.9997 26.7955 11.6593 26.5382 10.3661C26.281 9.07286 25.6461 7.88497 24.7137 6.95262C23.7814 6.02027 22.5935 5.38534 21.3003 5.1281C20.0071 4.87087 18.6666 5.00289 17.4485 5.50747C16.2303 6.01206 15.1891 6.86654 14.4565 7.96287C13.724 9.0592 13.333 10.3481 13.333 11.6667C13.333 13.4348 14.0354 15.1305 15.2856 16.3807C16.5359 17.631 18.2316 18.3333 19.9997 18.3333ZM19.9997 8.33334C20.6589 8.33334 21.3034 8.52883 21.8516 8.8951C22.3997 9.26138 22.827 9.78197 23.0793 10.3911C23.3316 11.0001 23.3976 11.6704 23.269 12.317C23.1403 12.9636 22.8229 13.5575 22.3567 14.0237C21.8905 14.4899 21.2966 14.8073 20.65 14.936C20.0034 15.0646 19.3332 14.9986 18.7241 14.7463C18.115 14.494 17.5944 14.0667 17.2281 13.5186C16.8618 12.9704 16.6663 12.3259 16.6663 11.6667C16.6663 10.7826 17.0175 9.93477 17.6427 9.30965C18.2678 8.68453 19.1156 8.33334 19.9997 8.33334Z" fill="#ea3aa1"/>
+                                <path d="M19.9997 21.668C16.9055 21.668 13.938 22.8971 11.7501 25.0851C9.56217 27.273 8.33301 30.2404 8.33301 33.3346C8.33301 33.7767 8.5086 34.2006 8.82116 34.5131C9.13372 34.8257 9.55765 35.0013 9.99967 35.0013C10.4417 35.0013 10.8656 34.8257 11.1782 34.5131C11.4907 34.2006 11.6663 33.7767 11.6663 33.3346C11.6663 31.1245 12.5443 29.0049 14.1071 27.4421C15.6699 25.8793 17.7895 25.0013 19.9997 25.0013C22.2098 25.0013 24.3294 25.8793 25.8922 27.4421C27.455 29.0049 28.333 31.1245 28.333 33.3346C28.333 33.7767 28.5086 34.2006 28.8212 34.5131C29.1337 34.8257 29.5576 35.0013 29.9997 35.0013C30.4417 35.0013 30.8656 34.8257 31.1782 34.5131C31.4908 34.2006 31.6663 33.7767 31.6663 33.3346C31.6663 30.2404 30.4372 27.273 28.2493 25.0851C26.0613 22.8971 23.0939 21.668 19.9997 21.668Z" fill="#ea3aa1"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="text-meja-100 font-semibold md:text-24px">Category</a>
+                    </div>
+                    <div class="bg-white px-6 md:px-24 py-6 md:py-11 flex flex-col items-center justify-center">
+                        <div class="bg-meja-10 rounded-full w-10 h-10 md:w-16 md:h-16 grid place-items-center mb-2 md:mb-5">
+                            <svg class="h-6 md:h-auto" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19.9997 18.3333C21.3182 18.3333 22.6071 17.9423 23.7035 17.2098C24.7998 16.4773 25.6543 15.4361 26.1589 14.2179C26.6635 12.9997 26.7955 11.6593 26.5382 10.3661C26.281 9.07286 25.6461 7.88497 24.7137 6.95262C23.7814 6.02027 22.5935 5.38534 21.3003 5.1281C20.0071 4.87087 18.6666 5.00289 17.4485 5.50747C16.2303 6.01206 15.1891 6.86654 14.4565 7.96287C13.724 9.0592 13.333 10.3481 13.333 11.6667C13.333 13.4348 14.0354 15.1305 15.2856 16.3807C16.5359 17.631 18.2316 18.3333 19.9997 18.3333ZM19.9997 8.33334C20.6589 8.33334 21.3034 8.52883 21.8516 8.8951C22.3997 9.26138 22.827 9.78197 23.0793 10.3911C23.3316 11.0001 23.3976 11.6704 23.269 12.317C23.1403 12.9636 22.8229 13.5575 22.3567 14.0237C21.8905 14.4899 21.2966 14.8073 20.65 14.936C20.0034 15.0646 19.3332 14.9986 18.7241 14.7463C18.115 14.494 17.5944 14.0667 17.2281 13.5186C16.8618 12.9704 16.6663 12.3259 16.6663 11.6667C16.6663 10.7826 17.0175 9.93477 17.6427 9.30965C18.2678 8.68453 19.1156 8.33334 19.9997 8.33334Z" fill="#ea3aa1"/>
+                                <path d="M19.9997 21.668C16.9055 21.668 13.938 22.8971 11.7501 25.0851C9.56217 27.273 8.33301 30.2404 8.33301 33.3346C8.33301 33.7767 8.5086 34.2006 8.82116 34.5131C9.13372 34.8257 9.55765 35.0013 9.99967 35.0013C10.4417 35.0013 10.8656 34.8257 11.1782 34.5131C11.4907 34.2006 11.6663 33.7767 11.6663 33.3346C11.6663 31.1245 12.5443 29.0049 14.1071 27.4421C15.6699 25.8793 17.7895 25.0013 19.9997 25.0013C22.2098 25.0013 24.3294 25.8793 25.8922 27.4421C27.455 29.0049 28.333 31.1245 28.333 33.3346C28.333 33.7767 28.5086 34.2006 28.8212 34.5131C29.1337 34.8257 29.5576 35.0013 29.9997 35.0013C30.4417 35.0013 30.8656 34.8257 31.1782 34.5131C31.4908 34.2006 31.6663 33.7767 31.6663 33.3346C31.6663 30.2404 30.4372 27.273 28.2493 25.0851C26.0613 22.8971 23.0939 21.668 19.9997 21.668Z" fill="#ea3aa1"/>
+                            </svg>
+                        </div>
+                        <a href="#" class="text-meja-100 font-semibold md:text-24px">Category</a>
+                    </div>
+                </div>
+                <!-- ACCORDION -->
+                <div class="my-16">
+                    <div class="tab w-full overflow-hidden">
+                        <input checked class="absolute opacity-0" id="tab1" type="radio" name="accordion">
+                        <label for="tab1" class="flex justify-between items-center transition-all duration-300 text-black-100 cursor-pointer">
+                            <span class="block font-semibold text-20px md:text-24px py-7 px-6">Bagaimana cara menghapus akun?</span>
+                        </label>
+                        <div class="tab-content overflow-hidden">
+                            <p class="p-6 text-black-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quibusdam necessitatibus et inventore iusto est fugit maiores neque adipisci cumque, repellendus cum fuga, ipsa eius! Reiciendis unde tempore vitae, blanditiis libero sit eaque cumque, aut ipsum, ab totam repellendus repellat saepe aliquam optio. Enim beatae repudiandae consequuntur, officia nostrum debitis. Veritatis ab doloremque nisi voluptate aperiam eligendi saepe inventore at iure facilis. Atque sed, repellat quae ipsa reprehenderit eius praesentium facere, ullam consequatur quidem recusandae odit reiciendis dolores ipsam autem omnis unde molestias esse. Nulla, eaque! Facere odio delectus perspiciatis mollitia ipsum quisquam sit esse? At, accusamus. Magni, atque. Harum.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden">
+                        <input class="absolute opacity-0" id="tab2" type="radio" name="accordion">
+                        <label for="tab2" class="flex justify-between items-center transition-all duration-300 text-black-100 cursor-pointer">
+                            <span class="block font-semibold text-20px md:text-24px py-7 px-6">Bagaimana cara menghapus akun?</span>
+                            
+                        </label>
+                        <div class="tab-content overflow-hidden">
+                            <p class="p-6 text-black-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quibusdam necessitatibus et inventore iusto est fugit maiores neque adipisci cumque, repellendus cum fuga, ipsa eius! Reiciendis unde tempore vitae, blanditiis libero sit eaque cumque, aut ipsum, ab totam repellendus repellat saepe aliquam optio. Enim beatae repudiandae consequuntur, officia nostrum debitis. Veritatis ab doloremque nisi voluptate aperiam eligendi saepe inventore at iure facilis. Atque sed, repellat quae ipsa reprehenderit eius praesentium facere, ullam consequatur quidem recusandae odit reiciendis dolores ipsam autem omnis unde molestias esse. Nulla, eaque! Facere odio delectus perspiciatis mollitia ipsum quisquam sit esse? At, accusamus. Magni, atque. Harum.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden">
+                        <input class="absolute opacity-0" id="tab3" type="radio" name="accordion">
+                        <label for="tab3" class="flex justify-between items-center transition-all duration-300 text-black-100 cursor-pointer">
+                            <span class="block font-semibold text-20px md:text-24px py-7 px-6">Bagaimana cara menghapus akun?</span>
+                        </label>
+                        <div class="tab-content overflow-hidden">
+                            <p class="p-6 text-black-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quibusdam necessitatibus et inventore iusto est fugit maiores neque adipisci cumque, repellendus cum fuga, ipsa eius! Reiciendis unde tempore vitae, blanditiis libero sit eaque cumque, aut ipsum, ab totam repellendus repellat saepe aliquam optio. Enim beatae repudiandae consequuntur, officia nostrum debitis. Veritatis ab doloremque nisi voluptate aperiam eligendi saepe inventore at iure facilis. Atque sed, repellat quae ipsa reprehenderit eius praesentium facere, ullam consequatur quidem recusandae odit reiciendis dolores ipsam autem omnis unde molestias esse. Nulla, eaque! Facere odio delectus perspiciatis mollitia ipsum quisquam sit esse? At, accusamus. Magni, atque. Harum.</p>
+                        </div>
+                    </div>
+                    <div class="tab w-full overflow-hidden">
+                        <input class="absolute opacity-0" id="tab4" type="radio" name="accordion">
+                        <label for="tab4" class="flex justify-between items-center transition-all duration-300 text-black-100 cursor-pointer">
+                            <span class="block font-semibold text-20px md:text-24px py-7 px-6">Bagaimana cara menghapus akun?</span>
+                        </label>
+                        <div class="tab-content overflow-hidden">
+                            <p class="p-6 text-black-70">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea quibusdam necessitatibus et inventore iusto est fugit maiores neque adipisci cumque, repellendus cum fuga, ipsa eius! Reiciendis unde tempore vitae, blanditiis libero sit eaque cumque, aut ipsum, ab totam repellendus repellat saepe aliquam optio. Enim beatae repudiandae consequuntur, officia nostrum debitis. Veritatis ab doloremque nisi voluptate aperiam eligendi saepe inventore at iure facilis. Atque sed, repellat quae ipsa reprehenderit eius praesentium facere, ullam consequatur quidem recusandae odit reiciendis dolores ipsam autem omnis unde molestias esse. Nulla, eaque! Facere odio delectus perspiciatis mollitia ipsum quisquam sit esse? At, accusamus. Magni, atque. Harum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+{% endblock %}

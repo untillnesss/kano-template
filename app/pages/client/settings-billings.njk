@@ -1,0 +1,64 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Client Settings Billings' %}
+{% set style = 'settings' %}
+{% set script = 'settings' %}
+{% extends "client-dashboard.njk" %}
+
+{% block content %}
+    <!-- MAIN -->
+    <main id="main-settings">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-between">
+                <aside class="aside-settings">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
+                        <h3 class="aside-title">Settings</h3>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link">Account</a>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link">Security</a>
+                    </div>
+                    <div>
+                        <a href="./settings-billings" class="aside-link aside-link-active">Billings</a>
+                    </div>
+                </aside>
+                <div class="main-line"></div>
+                <section class="section-settings">
+                    <div class="mb-4px md:mb-8px">
+                        <h1 class="section-title">Billings Settings</h1>
+                    </div>
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
+                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
+                    </div>
+                    <div class="section-settings-container">
+                        <div class="row-flex-kanoo items-center justify-between mb-24px">
+                            <h5 class="section-subtitle mb-12px md:mb-8px">My Billings Method</h5>
+                            <a href="./settings-billings-add" class="section-button-link">Add New Method</a>
+                        </div>
+                        <div class="mb-24px">
+                            <h6 class="section-subtitle-16px">Preffered</h6>
+                            <div class="row-flex-kanoo items-center justify-between">
+                                <div class="flex items-center mb-8px md:mb-0">
+                                    <img src="../../assets/img/bank-bri.png" height="48" alt="#">
+                                    <span class="text-16px text-black-100 ml-22px">Bank Rakyat Indonesia</span>
+                                </div>
+                                <a href="./settings-billings-edit" class="section-button-link-cancel">Edit Method</a>
+                            </div>
+                        </div>
+                        <div>
+                            <h6 class="section-subtitle-16px">Optional</h6>
+                            <div class="row-flex-kanoo items-center justify-between">
+                                <div class="flex items-center mb-8px md:mb-0">
+                                    <img src="../../assets/img/bank-bca.png" height="48" alt="#">
+                                    <span class="text-16px text-black-100 ml-22px">Bank Central Asia</span>
+                                </div>
+                                <a href="./settings-billings-edit" class="section-button-link-cancel">Edit Method</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+{% endblock %}

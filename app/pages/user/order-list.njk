@@ -1,0 +1,196 @@
+{% set title = 'Order List' %}
+{% extends "user-dashboard.njk" %}
+
+{% block content %}
+    <div class="pb-20" style="background-color: #f8f8f8;">
+        <div class="absolute top-16 bg-kuning-100 h-96 w-full z-10"></div>
+        <div class="container-kanoo relative z-20 pt-16 md:pt-24">
+            <div class="relative lg:grid lg:grid-cols-10">
+                <div class="col-span-3 bg-white rounded-8px md:rounded-none md:rounded-l-8px md:border-r-2 border-black-10 py-10 px-8">
+                    <h1 class="mb-6 text-black-100 font-semibold text-28px">Order List</h1>
+                    <ul>
+                        <li class="mb-4 cursor-pointer bg-meja-100 p-2 h-48px rounded-4px flex items-center justify-between">
+                            <a href="#" class="pl-2 text-white font-semibold text-14px">Active Order</a>
+                            <span class="text-14px bg-meja-70 text-white h-32px w-32px rounded-full grid place-items-center font-bold">7</span>
+                        </li>
+                        <li class="mb-4 cursor-pointer bg-meja-10 p-2 h-48px rounded-4px flex items-center justify-between">
+                            <a href="#" class="pl-2 text-meja-100 font-semibold text-14px">Late Order</a>
+                            <span class="text-14px bg-meja-30 text-meja-100 h-32px w-32px rounded-full grid place-items-center font-bold">0</span>
+                        </li>
+                        <li class="mb-4 cursor-pointer bg-meja-10 p-2 h-48px rounded-4px flex items-center justify-between">
+                            <a href="#" class="pl-2 text-meja-100 font-semibold text-14px">On Review Order</a>
+                            <span class="text-14px bg-meja-30 text-meja-100 h-32px w-32px rounded-full grid place-items-center font-bold">0</span>
+                        </li>
+                        <li class="mb-4 cursor-pointer bg-meja-10 p-2 h-48px rounded-4px flex items-center justify-between">
+                            <a href="#" class="pl-2 text-meja-100 font-semibold text-14px">Completed Order</a>
+                            <span class="text-14px bg-meja-30 text-meja-100 h-32px w-32px rounded-full grid place-items-center font-bold">0</span>
+                        </li>
+                        <li class="mb-4 cursor-pointer bg-meja-10 p-2 h-48px rounded-4px flex items-center justify-between">
+                            <a href="#" class="pl-2 text-meja-100 font-semibold text-14px">Canceled Order</a>
+                            <span class="text-14px bg-meja-30 text-meja-100 h-32px w-32px rounded-full grid place-items-center font-bold">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-span-7 bg-white rounded-8px md:rounded-none md:rounded-r-8px mt-10 md:mt-0 py-10 px-8">
+                    <h1 class="mb-3 text-black-100 font-semibold text-28px">Active Order</h1>
+                    <!-- Table -->
+                    <div class="overflow-x-auto bg-white relative">
+                        <table class="table-auto w-full whitespace-nowrap relative">
+                            <thead>
+                                <tr class="text-left">
+                                    <th class="border-b-2 border-black-10 text-16px text-black-100 py-4 pr-8 font-semibold">
+                                        Buyer
+                                    </th>
+                                    <th class="border-b-2 border-black-10 text-16px text-black-100 py-4 pr-8 font-semibold">
+                                        Service
+                                    </th>
+                                    <th class="border-b-2 border-black-10 text-16px text-black-100 py-4 pr-8 font-semibold">
+                                        Due on
+                                    </th>
+                                    <th class="border-b-2 border-black-10 text-16px text-black-100 py-4 pr-8 font-semibold">
+                                        Price
+                                    </th>
+                                    <th class="border-b-2 border-black-10 text-16px text-black-100 py-4 font-semibold"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b-2 border-black-10 text-20px">
+                                    <td class="py-4 pr-8">
+                                        <div class="flex items-center space-x-2 pr-8">
+                                            <img src="https://placekitten.com/50/50" class="rounded-full h-32px w-32px">
+                                            <span class="font-semibold text-14px text-black-100">Yamato Santosa</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px whitespace-normal">
+                                        Help you to make a Poster Design for marketing needs
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        7 April 2020
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        $60
+                                    </td>
+                                    <td class="py-4">
+                                        <button class="bg-meja-100 text-white text-14px h-10 w-32 rounded-4px font-semibold">
+                                            See Detail
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b-2 border-black-10 text-20px">
+                                    <td class="py-4 pr-8">
+                                        <div class="flex items-center space-x-2 pr-8">
+                                            <img src="https://placekitten.com/50/50" class="rounded-full h-32px w-32px">
+                                            <span class="font-semibold text-14px text-black-100">Yamato Santosa</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px whitespace-normal">
+                                        Help you to make a Poster Design for marketing needs
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        7 April 2020
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        $60
+                                    </td>
+                                    <td class="py-4">
+                                        <button class="bg-meja-100 text-white text-14px h-10 w-32 rounded-4px font-semibold">
+                                            See Detail
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b-2 border-black-10 text-20px">
+                                    <td class="py-4 pr-8">
+                                        <div class="flex items-center space-x-2 pr-8">
+                                            <img src="https://placekitten.com/50/50" class="rounded-full h-32px w-32px">
+                                            <span class="font-semibold text-14px text-black-100">Yamato Santosa</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px whitespace-normal">
+                                        Help you to make a Poster Design for marketing needs
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        7 April 2020
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        $60
+                                    </td>
+                                    <td class="py-4">
+                                        <button class="bg-meja-100 text-white text-14px h-10 w-32 rounded-4px font-semibold">
+                                            See Detail
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b-2 border-black-10 text-20px">
+                                    <td class="py-4 pr-8">
+                                        <div class="flex items-center space-x-2 pr-8">
+                                            <img src="https://placekitten.com/50/50" class="rounded-full h-32px w-32px">
+                                            <span class="font-semibold text-14px text-black-100">Yamato Santosa</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px whitespace-normal">
+                                        Help you to make a Poster Design for marketing needs
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        7 April 2020
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        $60
+                                    </td>
+                                    <td class="py-4">
+                                        <button class="bg-meja-100 text-white text-14px h-10 w-32 rounded-4px font-semibold">
+                                            See Detail
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b-2 border-black-10 text-20px">
+                                    <td class="py-4 pr-8">
+                                        <div class="flex items-center space-x-2 pr-8">
+                                            <img src="https://placekitten.com/50/50" class="rounded-full h-32px w-32px">
+                                            <span class="font-semibold text-14px text-black-100">Yamato Santosa</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px whitespace-normal">
+                                        Help you to make a Poster Design for marketing needs
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        7 April 2020
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        $60
+                                    </td>
+                                    <td class="py-4">
+                                        <button class="bg-meja-100 text-white text-14px h-10 w-32 rounded-4px font-semibold">
+                                            See Detail
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="border-b-2 border-black-10 text-20px">
+                                    <td class="py-4 pr-8">
+                                        <div class="flex items-center space-x-2 pr-8">
+                                            <img src="https://placekitten.com/50/50" class="rounded-full h-32px w-32px">
+                                            <span class="font-semibold text-14px text-black-100">Yamato Santosa</span>
+                                        </div>
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px whitespace-normal">
+                                        Help you to make a Poster Design for marketing needs
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        7 April 2020
+                                    </td>
+                                    <td class="py-4 pr-8 text-black-70 text-14px">
+                                        $60
+                                    </td>
+                                    <td class="py-4">
+                                        <button class="bg-meja-100 text-white text-14px h-10 w-32 rounded-4px font-semibold">
+                                            See Detail
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

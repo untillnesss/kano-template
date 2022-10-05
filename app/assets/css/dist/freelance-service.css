@@ -1,0 +1,328 @@
+body {
+    background-color: #F8F8F8;
+}
+#cover-yellow {
+    height: 488px;
+    width: 100%;
+    position: absolute;
+    background-color: #D9BF3F;
+}
+
+.section-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #222222;
+}
+@media (max-width: 640px) {
+    .section-title {
+        font-size: 20px;
+        line-height: 34px;
+    }
+}
+
+#main {
+    padding-top: 98px;
+    padding-bottom: 80px;
+}
+@media (max-width: 768px) {
+    #main {
+        padding-top: 48px;
+        padding-bottom: 60px;
+    }  
+}
+
+#article {
+    width: calc(100% - 407px - 30px);
+    background-color: #FDFEFF;
+    padding: 40px 32px;
+    border-radius: 8px;
+}
+#article .svg-star {
+    margin-left: 6px;
+}
+.article-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 48px;
+    color: #222222;
+}
+.article-user-image {
+    height: 56px;
+    width: 56px;
+    border-radius: 50%;
+}
+.article-user-name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #222222;
+}
+.article-user-level {
+    font-weight: 600;
+    font-size: 16px;
+    color: #646464;
+}
+.article-image-primary {
+    height: 400px;
+    width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.row-secondary-image {
+    flex-wrap: nowrap !important;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.row-secondary-image::-webkit-scrollbar {
+    display: none;
+}
+.article-image-secondary {
+    height: 120px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-right: 24px;
+    opacity: 0.5;
+    cursor: pointer;
+}
+.article-image-secondary-active {
+    border: 2px solid #FF8845;
+    opacity: 1 !important;
+}
+.article-deskripsi-text {
+    font-size: 20px;
+    line-height: 34px;
+    color: #646464;
+}
+.article-keahlian-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 34px;
+    color: #646464;
+}
+.article-keahlian-bar {
+    height: 10px;
+    position: relative;
+    background-color: #E7E8E9;
+    border-radius: 40px;
+}
+.article-keahlian-bar-value {
+    height: 100%;
+    display: block;
+    position: absolute;
+    background-color: #EA3AA1;
+    border-radius: 40px;
+}
+.article-testimonial-list {
+    width: 100%;
+    display: block;
+    flex-wrap: wrap;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #E7E8E9;
+}
+.article-testimonial-list:last-child {
+    border-bottom: unset;
+}
+.article-testimonial-user-image {
+    height: 56px;
+    width: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.article-testimonial-user-name {
+    font-weight: 600;
+    font-size: 20px;
+    color: #222222;
+}
+.article-testimonial-user-level {
+    font-size: 16px;
+    color: #646464;
+}
+.article-testimonial-text {
+    font-size: 16px;
+    line-height: 28px;
+    color: #646464;
+}
+@media (max-width: 1250px) {
+    #article {
+        width: calc(100% - 370px - 30px);
+        background-color: #FDFEFF;
+        padding: 36px 24px;
+        border-radius: 8px;
+    }
+}
+@media (max-width: 1024px) {
+    #article {
+        width: 100%;
+        padding: 40px 32px;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 768px) {
+    #article {
+        width: 100%;
+        padding: 32px 18px;
+        margin-bottom: 32px;
+    }
+    #article .svg-star {
+        height: 18px;
+        width: 18px;
+        margin-left: 2px;
+    }
+    .article-title {
+        font-size: 22px;
+        line-height: 37px;
+    }
+    .article-user-image {
+        height: 40px;
+        width: 40px;
+    }
+    .article-user-name {
+        font-size: 12px;
+    }
+    .article-user-level {
+        font-size: 12px;
+    }
+    .article-image-primary {
+        height: 300px;
+    }
+    .article-image-secondary {
+        height: 100px;
+        width: 180px;
+        margin-right: 20px;
+    }
+    .article-deskripsi-text {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .article-keahlian-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .article-testimonial-list {
+        padding-top: 18px;
+        padding-bottom: 18px;
+    }
+    .article-testimonial-user-image {
+        height: 40px;
+        width: 40px;
+    }
+    .article-testimonial-user-name {
+        font-size: 12px;
+    }
+    .article-testimonial-user-level {
+        font-size: 12px;
+    }
+    .article-testimonial-text {
+        font-size: 14px;
+        line-height: 25px;
+    }
+}
+
+#aside {
+    width: 407px;
+    background-color: #FDFEFF;
+    border-radius: 8px;
+    padding: 40px 32px;
+}
+.aside-title {
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #222222;
+}
+.aside-text {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #646464;
+}
+.aside-price {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 40px;
+    color: #EA3AA1;
+}
+.aside-button-paket {
+    height: 56px;
+    width: 172px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EA3AA1;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 20px;
+    color: #FDFEFF;
+}
+@media (max-width: 1250px) {
+    #aside {
+        width: 370px;
+        padding: 36px 24px;
+    }
+    .aside-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .aside-text {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .aside-price {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .aside-button-paket {
+        height: 48px;
+        width: 162px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 1024px) {
+    #aside {
+        width: 100%;
+        padding: 40px 32px;
+    }
+    .aside-title {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .aside-text {
+        margin-bottom: 24px;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .aside-price {
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .aside-button-paket {
+        height: 56px;
+        width: 172px;
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .aside-title {
+        margin-bottom: 8px;
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .aside-text {
+        margin-bottom: 18px;
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .aside-price {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .aside-button-paket {
+        height: 48px;
+        width: 155px;
+        font-size: 16px;
+    }
+}

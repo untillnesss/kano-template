@@ -1,0 +1,554 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Sub Category' %}
+{% set style = 'category' %}
+{% set script = 'category' %}
+{% extends "landing-page.njk" %}
+
+{% block content %}
+    <!-- HEADER -->
+    <header id="header">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo">
+                <div class="w-full md:w-1/2 py-16 md:py-20">
+                    <h1 class="header-title">Website UI Design</h1>
+                    <p class="header-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do elusmod tempor incididunt sed do elusmod tempor.</p>
+                </div>
+                <div class="hidden md:block w-full md:w-1/2">
+                    <img class="header-category-image" src="../assets/img/category-header.png" alt="#">
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- CONTENT CONTAINER: FORM & MAIN -->
+    <div id="content-container">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo items-start">
+                <form id="form-aside">
+                    <div class="w-full border-b border-black-30 pb-4 mb-4">
+                        <div class="row-flex-kanoo items-center justify-between mb-16px">
+                            <h4 class="form-aside-title">Search Keywords</h4>
+                            <button type="button" data-button="filter-toggle" data-toggle="open">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 12C20 11.7348 19.9132 11.4804 19.7588 11.2929C19.6044 11.1054 19.3949 11 19.1765 11L6.82353 11C6.60512 11 6.39565 11.1054 6.24121 11.2929C6.08676 11.4804 6 11.7348 6 12C6 12.2652 6.08676 12.5196 6.24121 12.7071C6.39565 12.8946 6.60512 13 6.82353 13L19.1765 13C19.3949 13 19.6044 12.8946 19.7588 12.7071C19.9132 12.5196 20 12.2652 20 12Z" fill="#222222"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="w-full relative">
+                            <span class="w-8 absolute top-1/2 left-3 transform -translate-y-1/2">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 2C5.14585 2 2 5.14585 2 9C2 12.8541 5.14585 16 9 16C10.748 16 12.345 15.348 13.5742 14.2812L14 14.707V16L19.5859 21.5859C20.1379 22.1379 21.0339 22.1379 21.5859 21.5859C22.1379 21.0339 22.1379 20.1379 21.5859 19.5859L16 14H14.707L14.2812 13.5742C15.348 12.345 16 10.748 16 9C16 5.14585 12.8541 2 9 2ZM9 4C11.7733 4 14 6.22673 14 9C14 11.7733 11.7733 14 9 14C6.22673 14 4 11.7733 4 9C4 6.22673 6.22673 4 9 4Z" fill="#BBBCBD"/>
+                                </svg>
+                            </span>
+                            <input id="search-keyword" type="text" class="form-search-keywords pl-12" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="w-full border-b border-black-30 pb-4 mb-4">
+                        <div class="row-flex-kanoo items-center justify-between mb-16px">
+                            <h4 class="form-aside-title">Category</h4>
+                            <button type="button" data-button="filter-toggle" data-toggle="open">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 12C20 11.7348 19.9132 11.4804 19.7588 11.2929C19.6044 11.1054 19.3949 11 19.1765 11L6.82353 11C6.60512 11 6.39565 11.1054 6.24121 11.2929C6.08676 11.4804 6 11.7348 6 12C6 12.2652 6.08676 12.5196 6.24121 12.7071C6.39565 12.8946 6.60512 13 6.82353 13L19.1765 13C19.3949 13 19.6044 12.8946 19.7588 12.7071C19.9132 12.5196 20 12.2652 20 12Z" fill="#222222"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="Website UI Design" id="category-1">
+                                <label for="category-1" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">Website UI Design</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="App Mobile Design" id="category-2">
+                                <label for="category-2" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">App Mobile Design</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="UX Researchn" id="category-3">
+                                <label for="category-3" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">UX Research</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="UX Design" id="category-4">
+                                <label for="category-4" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">UX Design</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="Interaction Design" id="category-5">
+                                <label for="category-5" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">Interaction Design</h6>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="hidden" type="checkbox" name="category" value="Visual Design" id="category-6">
+                                <label for="category-6" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">Visual Design</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-full pb-2 mb-4">
+                        <div class="row-flex-kanoo items-center justify-between mb-16px">
+                            <h4 class="form-aside-title">Budget</h4>
+                            <button type="button" data-button="filter-toggle" data-toggle="open">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 12C20 11.7348 19.9132 11.4804 19.7588 11.2929C19.6044 11.1054 19.3949 11 19.1765 11L6.82353 11C6.60512 11 6.39565 11.1054 6.24121 11.2929C6.08676 11.4804 6 11.7348 6 12C6 12.2652 6.08676 12.5196 6.24121 12.7071C6.39565 12.8946 6.60512 13 6.82353 13L19.1765 13C19.3949 13 19.6044 12.8946 19.7588 12.7071C19.9132 12.5196 20 12.2652 20 12Z" fill="#222222"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mb-10px relative">
+                            <span id="range-budget-progress" class="w-1/2 absolute top-1/2 left-0 transform -translate-y-1/2 bg-meja-100"></span>
+                            <input type="range" name="range_budget" id="range-budget-input" min="1" max="1000" value="500">
+                        </div>
+                        <div class="row-flex-kanoo items-center justify-between">
+                            <strong class="font-normal text-14px text-black-100">$<span id="range-budget-value"></span>
+                            </strong>
+                            <strong class="font-normal text-14px text-black-100">$<span id="range-budget-length">1000</span></strong>
+                        </div>
+                    </div>
+                    <div class="w-full">
+                        <div class="flex flex-wrap items-center justify-between mb-4">
+                            <h4 class="form-aside-title">Time Delivery</h4>
+                            <button type="button" data-button="filter-toggle" data-toggle="open">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 12C20 11.7348 19.9132 11.4804 19.7588 11.2929C19.6044 11.1054 19.3949 11 19.1765 11L6.82353 11C6.60512 11 6.39565 11.1054 6.24121 11.2929C6.08676 11.4804 6 11.7348 6 12C6 12.2652 6.08676 12.5196 6.24121 12.7071C6.39565 12.8946 6.60512 13 6.82353 13L19.1765 13C19.3949 13 19.6044 12.8946 19.7588 12.7071C19.9132 12.5196 20 12.2652 20 12Z" fill="#222222"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="w-full">
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="1 Month (1)" id="time-1">
+                                <label for="time-1" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">1 Month (1)</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="1 Week (1)" id="time-2">
+                                <label for="time-2" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">1 Week (1)</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="1-3 Days (4)" id="time-3">
+                                <label for="time-3" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">1-3 Days (4)</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="1-3 Weeks (2)" id="time-4">
+                                <label for="time-4" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">1-3 Weeks (2)</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="2-3 Months (3)" id="time-5">
+                                <label for="time-5" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">2-3 Months (3)</h6>
+                                </label>
+                            </div>
+                            <div class="mb-12px">
+                                <input class="hidden" type="checkbox" name="category" value="6-Months (1)" id="time-6">
+                                <label for="time-6" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">6-Months (1)</h6>
+                                </label>
+                            </div>
+                            <div>
+                                <input class="hidden" type="checkbox" name="category" value="Less then Year (1)" id="time-7">
+                                <label for="time-7" class="flex items-center">
+                                    <div class="form-custom-checkbox-box">
+                                        <svg width="14" height="10" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.33399 9.66627C5.22735 9.66593 5.12191 9.64366 5.02424 9.60084C4.92656 9.55802 4.83874 9.49558 4.76622 9.41738L0.986217 5.39627C0.844915 5.24569 0.769221 5.04514 0.775785 4.83874C0.782348 4.63235 0.870633 4.43702 1.02122 4.29572C1.1718 4.15441 1.37235 4.07872 1.57874 4.08528C1.78514 4.09185 1.98047 4.18013 2.12177 4.33072L5.32622 7.74516L11.8673 0.589605C11.9337 0.506944 12.0163 0.438727 12.11 0.389143C12.2037 0.339559 12.3065 0.309654 12.4122 0.301266C12.5179 0.292879 12.6242 0.306185 12.7245 0.340367C12.8249 0.374549 12.9172 0.428886 12.9958 0.50004C13.0744 0.571195 13.1376 0.657664 13.1815 0.754138C13.2255 0.850612 13.2493 0.955053 13.2514 1.06105C13.2535 1.16704 13.2339 1.27235 13.1939 1.3705C13.1538 1.46866 13.0941 1.55759 13.0184 1.63183L5.90955 9.4096C5.83772 9.48921 5.7502 9.55311 5.65249 9.59728C5.55478 9.64145 5.44899 9.66494 5.34177 9.66627H5.33399Z" fill="currentColor"/>
+                                        </svg>
+                                    </div>
+                                    <h6 class="form-custom-checkbox-text">Less then Year (1)</h6>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <main id="main">
+                    <div class="filter-main-sort">
+                        <div class="flex items-center filter-left">
+                            <span class="filter-span">Filter</span>
+                            <button type="button" data-button="open-filter">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13.8999 22C13.6835 22 13.473 21.9298 13.2999 21.8L9.29989 18.75C9.17753 18.6558 9.07864 18.5346 9.01098 18.3958C8.94332 18.257 8.90872 18.1044 8.90988 17.95V14.68L4.10989 5.46C4.03083 5.30741 3.99244 5.13703 3.99841 4.96529C4.00437 4.79354 4.0545 4.62623 4.14394 4.4795C4.23339 4.33276 4.35914 4.21155 4.50907 4.12757C4.659 4.04358 4.82804 3.99964 4.99988 4H18.9999C19.1734 4.00003 19.344 4.04523 19.4948 4.13114C19.6455 4.21705 19.7714 4.34072 19.8599 4.49C19.9477 4.64202 19.9939 4.81447 19.9939 4.99C19.9939 5.16554 19.9477 5.33798 19.8599 5.49L14.8599 14.7V21C14.8612 21.1864 14.8104 21.3694 14.7132 21.5284C14.616 21.6874 14.4763 21.8161 14.3099 21.9C14.1819 21.9621 14.0421 21.9962 13.8999 22ZM10.8999 17.46L12.8999 18.99V14.44C12.8993 14.2876 12.9335 14.1371 12.9999 14L17.2999 6H6.63988L10.7699 14C10.8428 14.1423 10.8805 14.3001 10.8799 14.46L10.8999 17.46Z" fill="#FDFEFF"/>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="flex items-center filter-right">
+                            <label for="sort-by">Sort By</label>
+                            <div class="ml-4 relative">
+                                <svg class="absolute top-1/2 right-4 transform -translate-y-1/2" width="10" height="6" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.99953 5.1675C4.84377 5.16781 4.69281 5.11356 4.57287 5.01417L0.572866 1.68084C0.436722 1.56768 0.351105 1.40507 0.334852 1.22878C0.318599 1.0525 0.37304 0.876979 0.486199 0.740835C0.599358 0.60469 0.761966 0.519074 0.93825 0.502821C1.11453 0.486568 1.29005 0.541009 1.4262 0.654168L4.99953 3.64083L8.57287 0.760835C8.64106 0.705458 8.71952 0.664103 8.80375 0.639149C8.88798 0.614194 8.9763 0.606132 9.06365 0.615425C9.15101 0.624717 9.23566 0.651182 9.31275 0.693298C9.38984 0.735414 9.45785 0.79235 9.51287 0.860835C9.57392 0.929382 9.62016 1.0098 9.64869 1.09705C9.67722 1.1843 9.68742 1.2765 9.67866 1.36787C9.6699 1.45925 9.64236 1.54783 9.59777 1.62807C9.55318 1.70831 9.4925 1.77847 9.41953 1.83417L5.41953 5.05417C5.29614 5.13785 5.14827 5.17775 4.99953 5.1675Z" fill="#FF8845"/>
+                                </svg>
+                                <select name="sort_by" id="sort-by" class="appearance-none">
+                                    <option value="ratings">Ratings</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="main-article-container">
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#" class="main-article-list">
+                            <article class="w-full">
+                                <div class="mb-14px xl:mb-16px">
+                                    <img class="article-main-image" src="../assets/img/freelance-list-1.png" alt="#">
+                                </div>
+                                <div class="flex items-center mb-16px lg:mb-20px xl:mb-24px">
+                                    <div class="mr-2">
+                                        <img class="rounded-full" src="../assets/img/user.png" height="40" width="40" alt="#">
+                                    </div>
+                                    <div>
+                                        <div class="article-user-name">Yomoto Santoso</div>
+                                        <span class="article-user-level">Level 2 Seller</span>
+                                    </div>
+                                </div>
+                                <div class="mb-16px lg:mb-20px xl:mb-22px">
+                                    <h2 class="article-main-title">Help you to make a Poster Design for marketing needs</h2>
+                                </div>
+                                <div class="flex justify-between items-center">
+                                    <div class="inline-flex items-center">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M12.9472 2.80617L15.6062 8.19417L21.5522 9.05817C22.4192 9.18417 22.7662 10.2502 22.1382 10.8622L17.8352 15.0562L18.8512 20.9782C18.9992 21.8422 18.0932 22.5002 17.3172 22.0932L11.9992 19.2972L6.68122 22.0932C5.90522 22.5012 4.99922 21.8422 5.14722 20.9782L6.16322 15.0562L1.85922 10.8622C1.23222 10.2502 1.57822 9.18517 2.44522 9.05917L8.39122 8.19517L11.0502 2.80717C11.4392 2.02017 12.5592 2.02017 12.9472 2.80617Z" fill="#FFB422"/>
+                                        </svg>
+                                        <span class="article-stars">5.0 (11)</span>
+                                    </div>
+                                    <div>
+                                        <span class="article-price">Start $10</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                    </div>
+                    <div class="main-pagination">
+                        <div class="w-2/12 text-left">
+                            <a href="#" class="pagination-link-button">
+                                <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.36 10.5002C5.22529 10.4997 5.09208 10.4719 4.96836 10.4187C4.84463 10.3654 4.73294 10.2877 4.64 10.1902L0.779998 6.19019C0.596771 6.00326 0.494141 5.75194 0.494141 5.49019C0.494141 5.22843 0.596771 4.97711 0.779998 4.79019L4.78 0.790185C4.87324 0.696947 4.98393 0.622986 5.10575 0.572526C5.22757 0.522066 5.35814 0.496094 5.49 0.496094C5.62186 0.496094 5.75243 0.522066 5.87425 0.572526C5.99607 0.622986 6.10676 0.696947 6.2 0.790185C6.29324 0.883424 6.3672 0.994114 6.41766 1.11594C6.46812 1.23776 6.49409 1.36833 6.49409 1.50019C6.49409 1.63204 6.46812 1.76261 6.41766 1.88444C6.3672 2.00626 6.29324 2.11695 6.2 2.21019L2.9 5.50019L6.08 8.80019C6.26625 8.98755 6.37079 9.241 6.37079 9.50518C6.37079 9.76937 6.26625 10.0228 6.08 10.2102C5.98537 10.3041 5.87293 10.3781 5.74928 10.4279C5.62564 10.4777 5.49328 10.5023 5.36 10.5002Z" fill="#FDFEFF"/>
+                                </svg>
+                                <span class="ml-3">Previous</span>
+                            </a>
+                        </div>
+                        <div class="w-8/12 text-center">
+                            <a href="#" class="pagination-link pagination-active">1</a>
+                            <a href="#" class="pagination-link">2</a>
+                            <a href="#" class="pagination-link">3</a>
+                            <a href="#" class="pagination-link">4</a>
+                            <a href="#" class="pagination-link">5</a>
+                            <a href="#" class="pagination-link">6</a>
+                            <a href="#" class="pagination-link">7</a>
+                            <a href="#" class="pagination-link">8</a>
+                            <a href="#" class="pagination-link">...</a>
+                            <a href="#" class="pagination-link">20</a>
+                            <a href="#" class="pagination-link">21</a>
+                        </div>
+                        <div class="w-2/12 text-right">
+                            <a href="#" class="pagination-link-button">
+                                <span class="mr-3">Next</span>
+                                <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1.93833 10.7085C1.80124 10.7093 1.66534 10.683 1.53843 10.6312C1.41151 10.5794 1.29608 10.503 1.19875 10.4064C1.10111 10.3096 1.02362 10.1944 0.970737 10.0674C0.917853 9.94051 0.890625 9.80436 0.890625 9.66685C0.890625 9.52934 0.917853 9.39318 0.970737 9.26625C1.02362 9.13931 1.10111 9.0241 1.19875 8.92726L4.64666 5.50018L1.33416 2.05226C1.14015 1.85709 1.03126 1.59308 1.03126 1.31789C1.03126 1.0427 1.14015 0.778683 1.33416 0.583514C1.431 0.48588 1.54621 0.408386 1.67315 0.355502C1.80008 0.302618 1.93624 0.275391 2.07375 0.275391C2.21126 0.275391 2.34741 0.302618 2.47435 0.355502C2.60129 0.408386 2.71649 0.48588 2.81333 0.583514L6.83416 4.75018C7.02502 4.9449 7.13193 5.20669 7.13193 5.47935C7.13193 5.75201 7.02502 6.0138 6.83416 6.20851L2.6675 10.3752C2.574 10.4762 2.46142 10.5576 2.33627 10.6148C2.21111 10.672 2.07586 10.7039 1.93833 10.7085Z" fill="#FDFEFF"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+    </div>
+    <!-- FILTER MOBILE -->
+    <div id="filter-mobile">
+        <div class="mb-16px">
+            <h3 class="font-semibold text-18px text-black-100 mb-8px">Search Keywords</h3>
+            <div class="w-full relative">
+                <span class="w-8 absolute top-1/2 left-3 transform -translate-y-1/2">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9 2C5.14585 2 2 5.14585 2 9C2 12.8541 5.14585 16 9 16C10.748 16 12.345 15.348 13.5742 14.2812L14 14.707V16L19.5859 21.5859C20.1379 22.1379 21.0339 22.1379 21.5859 21.5859C22.1379 21.0339 22.1379 20.1379 21.5859 19.5859L16 14H14.707L14.2812 13.5742C15.348 12.345 16 10.748 16 9C16 5.14585 12.8541 2 9 2ZM9 4C11.7733 4 14 6.22673 14 9C14 11.7733 11.7733 14 9 14C6.22673 14 4 11.7733 4 9C4 6.22673 6.22673 4 9 4Z" fill="#BBBCBD"/>
+                    </svg>
+                </span>
+                <input type="text" class="w-full border border-black-100 rounded-8px py-8px pl-12" placeholder="Search">
+            </div>
+        </div>
+        <div class="mb-16px">
+            <h3 class="font-semibold text-18px text-black-100 mb-8px">Category</h3>
+            <div class="flex flex-wrap items-center">
+                <label class="filter-label-text">Website UI Design</label>
+                <label class="filter-label-text">App Mobile Design</label>
+                <label class="filter-label-text">UX Research</label>
+                <label class="filter-label-text">UX Design</label>
+                <label class="filter-label-text">Interaction Design</label>
+                <label class="filter-label-text">Visual Design</label>
+            </div>
+        </div>
+        <div class="mb-16px">
+            <h3 class="font-semibold text-18px text-black-100 mb-8px">Budget</h3>
+            <div class="mb-10px relative">
+                <span id="range-budget-progress-mobile" class="w-1/2 absolute top-1/2 left-0 transform -translate-y-1/2 bg-meja-100"></span>
+                <input type="range" name="range_budget" id="range-budget-input-mobile" min="1" max="1000" value="500">
+            </div>
+            <div class="row-flex-kanoo items-center justify-between">
+                <strong class="font-normal text-14px text-black-100">$<span id="range-budget-value-mobile"></span>
+                </strong>
+                <strong class="font-normal text-14px text-black-100">$<span id="range-budget-length-mobile">1000</span></strong>
+            </div>
+        </div>
+        <div class="mb-16px">
+            <h3 class="font-semibold text-18px text-black-100 mb-8px">Time Delivery</h3>
+            <div class="flex flex-wrap items-center">
+                <label class="filter-label-text">1 Month (1)</label>
+                <label class="filter-label-text">1 Week (1)</label>
+                <label class="filter-label-text">1-3 Days (4)</label>
+                <label class="filter-label-text">1-3 Weeks (2)</label>
+                <label class="filter-label-text">1-3 Weeks (2)</label>
+                <label class="filter-label-text">6-Months (1)</label>
+                <label class="filter-label-text">Less then Year (1)</label>
+            </div>
+        </div>
+        <div class="flex items-center justify-end">
+            <button class="font-semibold text-16px text-meja-100 px-24px py-8px rounded-5px" data-button="cancel-filter">Cancel</button>
+            <button class="font-semibold text-16px bg-meja-100 text-white-90 px-24px py-8px rounded-5px ml-16px" data-button="simpan-filter">Simpan</button>
+        </div>
+    </div>
+{% endblock %}

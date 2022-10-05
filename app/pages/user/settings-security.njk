@@ -1,0 +1,48 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - User Settings Security' %}
+{% set style = 'settings' %}
+{% set script = 'settings' %}
+{% extends "user-dashboard.njk" %}
+
+{% block content %}
+  <!-- MAIN -->
+    <main id="main-settings">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-between">
+                <aside class="aside-settings">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
+                        <h3 class="aside-title">Settings</h3>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link">Account</a>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link aside-link-active">Security</a>
+                    </div>
+                    <div>
+                        <a href="./settings-billings" class="aside-link">Billings</a>
+                    </div>
+                </aside>
+                <div class="main-line"></div>
+                <section class="section-settings">
+                    <div class="mb-4px md:mb-8px">
+                        <h1 class="section-title">Security Settings</h1>
+                    </div>
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
+                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
+                    </div>
+                    <div class="section-settings-container">
+                        <div class="row-flex-kanoo justify-between">
+                            <div class="mb-16px md:mb-0">
+                                <h5 class="section-subtitle mb-8px">My Password</h5>
+                                <span class="text-16px leading-28px mb-8px">*************</span>
+                                <p class="text-16px leading-28px text-success-condition">Your current password is good enough</p>
+                            </div>
+                            <a href="./settings-security-edit" class="section-button-link">Change Password</a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+{% endblock %}

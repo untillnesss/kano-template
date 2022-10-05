@@ -1,0 +1,72 @@
+<!-- Nama pages-->
+{% set title = 'Kanno - Client Settings Billings Add' %}
+{% set style = 'settings' %}
+{% set script = 'settings' %}
+{% extends "client-dashboard.njk" %}
+
+{% block content %}
+  <!-- MAIN -->
+    <main id="main-settings">
+        <div class="container-kanoo">
+            <div class="row-flex-kanoo justify-between">
+                <aside class="aside-settings">
+                    <div class="w-full mb-14px sm:18px md:mb-24px">
+                        <h3 class="aside-title">Settings</h3>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-account" class="aside-link">Account</a>
+                    </div>
+                    <div class="md:mb-16px">
+                        <a href="./settings-security" class="aside-link">Security</a>
+                    </div>
+                    <div>
+                        <a href="./settings-billings" class="aside-link aside-link-active">Billings</a>
+                    </div>
+                </aside>
+                <div class="main-line"></div>
+                <section class="section-settings">
+                    <div class="mb-4px md:mb-8px">
+                        <h1 class="section-title">Billings Settings</h1>
+                    </div>
+                    <div class="mb-20px sm:mb-28px md:mb-36px lg:mb-40px">
+                        <h6 class="section-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</h6>
+                    </div>
+                    <form class="section-settings-container">
+                        <div class="mb-32px">
+                            <h5 class="section-subtitle">New Billing Method</h5>
+                        </div>
+                        <div class="mb-24px">
+                            <h6 class="section-subtitle-16px">Bank Account</h6>
+                        </div>
+                        <div class="flex items-center pl-38px mb-24px">
+                            <div class="flex items-center mr-38px">
+                                <input type="radio" class="mr-12px md:mr-14px lg:mr-16px" name="bank_account" id="bank-bri" value="bri">
+                                <label for="bank-bri">
+                                    <img src="../../assets/img/bank-bri.png" height="48" alt="#">
+                                </label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="radio" class="mr-12px md:mr-14px lg:mr-16px" name="bank_account" id="bank-bca" value="bca">
+                                <label for="bank-bca">
+                                    <img src="../../assets/img/bank-bca.png" height="48" alt="#">
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-24px">
+                            <input class="section-form-input w-full" type="text" placeholder="Card Number">
+                        </div>
+                        <div class="mb-48px">
+                            <input class="section-form-input w-full" type="text" placeholder="Full Name">
+                        </div>
+                        <div class="flex items-center justify-end">
+                            <a href="./settings-billings" class="section-button-link-cancel">Cancel</a>
+                            <button class="section-button-link ml-14px md:ml-28px xl:ml-32px">Add Method</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </div>
+    </main>
+    <!-- COVER BODY: MODAL -->
+    <div class="kanoo-cover-body"></div>
+{% endblock %}

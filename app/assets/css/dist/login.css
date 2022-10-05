@@ -1,0 +1,8 @@
+#checkbox:checked+div {
+    background-color: #FF8845;
+    border: none;
+}
+
+#checkbox:checked+div>svg {
+    display: block;
+}

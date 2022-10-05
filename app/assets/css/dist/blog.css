@@ -1,0 +1,115 @@
+<<<<<<< HEAD
+body {
+    background-color: #f8f8f8;
+}
+#header {
+    background-color: #D9BF3F;
+=======
+#header {
+    background-color: #00CA8D;
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+    position: relative;
+    padding-top: 96px;
+    overflow-y: hidden;
+}
+<<<<<<< HEAD
+#header .row-flex-kanoo {
+    flex-wrap: wrap;
+}
+=======
+
+#header .row-flex-kanoo {
+    flex-wrap: wrap;
+}
+
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+#header .header-title {
+    margin-bottom: 29px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #FDFEFF;
+    line-height: 60px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+#header .header-text {
+    font-size: 20px;
+    line-height: 34px;
+    color: #FDFEFF;
+    padding-right: 11%;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+#header .header-link {
+    display: inline-block;
+    font-weight: 6000;
+    font-size: 16px;
+    color: #FDFEFF;
+    border: 1.5px solid #FDFEFF;
+    padding: 8px 16px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+#header .header-category-image {
+    position: absolute;
+    width: 57%;
+    right: 0px;
+    object-fit: cover;
+}
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+@media(max-width: 768px) {
+    #header .header-category-image {
+        position: absolute;
+        width: 100%;
+        right: 0px;
+        object-fit: cover;
+    }
+<<<<<<< HEAD
+=======
+
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+    #header .header-text {
+        font-size: 20px;
+        padding-right: 0px;
+    }
+}
+<<<<<<< HEAD
+.shadow-blog-card {
+    box-shadow: 10px 10px 40px rgba(100, 100, 100, 0.04);
+}
+#cat::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px 10px;
+=======
+
+.shadow-blog-card {
+    box-shadow: 10px 10px 40px rgba(100, 100, 100, 0.04);
+}
+
+#cat::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 2px 16px;
+>>>>>>> b4d082398dbd4713190c83eb7bcf79e001d002ca
+}
